@@ -13,24 +13,23 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Images/menu.jpg"  width="950" height="450">
+                    <img src="Images/menu.jpg" class="w-100 h-50">
                     <div class="carousel-caption text-light">
                         Kampanya yaptık gel gel
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/yayıncıımg.jpg" width="950" height="450">
+                    <img src="Images/yayıncıımg.jpg" class="w-100 h-50">
                      <div class="carousel-caption text-light">
                         Kampanya yaptık gel gel
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/forza.jpg" width="950" height="450">
+                    <img src="Images/forza.jpg" class="w-100 h-50">
                      <div class="carousel-caption text-light">
                         Kampanya yaptık gel gel
                     </div>
                 </div>
-
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -44,8 +43,85 @@
                 <h3 class="text-light">Dev İndirimler Başladı</h3>
             </div>
         </div>
-        <div class="">
-
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header bg-black">
+                        sad
+                    </div>
+                    <div class="card-body bg-black">
+                        <img src="Images/netfilix.png" class="img-thumbnail" />
+                    </div>
+                    <div class="card-footer">
+                        asda
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header  bg-black">
+                        sad
+                    </div>
+                    <div class="card-body bg-black">
+                        <img src="Images/nefs.png" class="img-thumbnail" />
+                    </div>
+                    <div class="card-footer">
+                        asda
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header  bg-black">
+                        sad
+                    </div>
+                    <div class="card-body bg-black">
+                        <img src="Images/epic%20games.jpg"  class="img-thumbnail"/>
+                    </div>
+                    <div class="card-footer">
+                        asda
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header bg-black">
+                        sad
+                    </div>
+                    <div class="card-body bg-black">
+                        <img src="Images/netfilix.png" class="img-thumbnail" />
+                    </div>
+                    <div class="card-footer">
+                        asda
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header  bg-black">
+                        sad
+                    </div>
+                    <div class="card-body bg-black">
+                        <img src="Images/nefs.png" class="img-thumbnail" />
+                    </div>
+                    <div class="card-footer">
+                        asda
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="card-header  bg-black">
+                        sad
+                    </div>
+                    <div class="card-body bg-black">
+                        <img src="Images/epic%20games.jpg"  class="img-thumbnail"/>
+                    </div>
+                    <div class="card-footer">
+                        asda
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>
