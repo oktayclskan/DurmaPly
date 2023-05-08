@@ -1,0 +1,33 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: #050505;
+}
+.navbar {
+    background-color: #111111;
+}
+.container-fluid .seacrh i{
+    padding:9px;
+    color:white;
+   margin-top:13px;
+}
+.container-fluid .seacrh .Stexbox {
+    height: 60px;
+    background-color: #181818;
+    outline:none;
+    border:none;
+    color:whitesmoke;
+    width:220px;
+    padding:3px;
+    padding-left:45px;
+}
+.righRow {
+    background-color: #181818;
+    margin-left: -12px;
+}
+.righRow h3{
+    text-align:center;
+    margin-top:17%;
+}

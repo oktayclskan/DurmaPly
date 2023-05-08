@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserPanel.master.cs" Inherits="DurmaPly.UserPanel.UserPanel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>DurmaPly</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Css/UserPanelMaster.css" rel="stylesheet" />
+    <link href="fontawesome-free-6.3.0-web/css/all.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar fixed-top navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar nav">
+                    <li class="nav-item ms-xxl-2">
+                        <a href="#" class="navbar-brand ">
+                            <img src="Images/durma-icon.png" width="35" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Mağaza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Haberler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Yorumlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Twich</a>
+                    </li>
+                </ul>
+                <%--<div class="input-group-sm">
+                    <asp:LinkButton ID="lbtn_search" runat="server" CssClass="btn btn-primary position-absolute">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </asp:LinkButton>
+                    <input type="text" class="form-control" placeholder="ara"/>
+                </div>--%>
+                <div class="seacrh">
+                    <i style="width: 50px;" class="fa-solid fa-magnifying-glass position-absolute"></i>
+                    <asp:TextBox ID="tb_seacrh" runat="server" CssClass="Stexbox">indirim</asp:TextBox>
+                </div>
+                <ul class="navbar nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light"><i class="fa-solid fa-globe"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light"><i class="fa-regular fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>
+<div>
+</div>
+<script src="../Scripts/bootstrap.bundle.min.js"></script>
+
