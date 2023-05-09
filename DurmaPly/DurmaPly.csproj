@@ -2146,12 +2146,14 @@
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\yen-sign.svg" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\yin-yang.svg" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\z.svg" />
+    <Content Include="UserPanel\Images\black.jpg" />
     <Content Include="UserPanel\Images\durma-icon.png" />
     <Content Include="UserPanel\Images\epic games.jpg" />
     <Content Include="UserPanel\Images\forza.jpg" />
     <Content Include="UserPanel\Images\menu.jpg" />
     <Content Include="UserPanel\Images\nefs.png" />
     <Content Include="UserPanel\Images\netfilix.png" />
+    <Content Include="UserPanel\Images\starrgncl.jpg" />
     <Content Include="UserPanel\Images\yayıncıımg.jpg" />
     <Content Include="UserPanel\Index.aspx" />
     <Content Include="Web.config" />
