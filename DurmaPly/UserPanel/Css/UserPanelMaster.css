@@ -4,6 +4,7 @@
 }
 body {
     background-color: #050505;
+    height:2000px;
 }
 .navbar {
     background-color: #111111;
@@ -30,4 +31,15 @@ body {
 .righRow h3{
     text-align:center;
     margin-top:17%;
+}
+.card .card-footer{
+    color:whitesmoke;
+}
+.stars{
+    color:yellow;
+    margin-top:-65px;
+    margin-left:10px;
+}
+.stars h6{
+    color:silver;
 }

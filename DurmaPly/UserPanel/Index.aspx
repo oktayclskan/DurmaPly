@@ -45,83 +45,257 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-4 border-0">
                     <div class="card-header bg-black">
-                        sad
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                     </div>
+
+
                     <div class="card-body bg-black">
-                        <img src="Images/netfilix.png" class="img-thumbnail" />
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
                     </div>
-                    <div class="card-footer">
-                        asda
-                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mt-4">
-                    <div class="card-header  bg-black">
-                        sad
-                    </div>
-                    <div class="card-body bg-black">
-                        <img src="Images/nefs.png" class="img-thumbnail" />
-                    </div>
-                    <div class="card-footer">
-                        asda
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mt-4">
-                    <div class="card-header  bg-black">
-                        sad
-                    </div>
-                    <div class="card-body bg-black">
-                        <img src="Images/epic%20games.jpg"  class="img-thumbnail"/>
-                    </div>
-                    <div class="card-footer">
-                        asda
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mt-4">
+             <div class="col-md-4">
+                <div class="card mt-4 border-0">
                     <div class="card-header bg-black">
-                        sad
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                     </div>
+
+
                     <div class="card-body bg-black">
-                        <img src="Images/netfilix.png" class="img-thumbnail" />
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
                     </div>
-                    <div class="card-footer">
-                        asda
-                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mt-4">
-                    <div class="card-header  bg-black">
-                        sad
+             <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                     </div>
+
+
                     <div class="card-body bg-black">
-                        <img src="Images/nefs.png" class="img-thumbnail" />
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
                     </div>
-                    <div class="card-footer">
-                        asda
-                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mt-4">
-                    <div class="card-header  bg-black">
-                        sad
+             <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                     </div>
+
+
                     <div class="card-body bg-black">
-                        <img src="Images/epic%20games.jpg"  class="img-thumbnail"/>
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
                     </div>
-                    <div class="card-footer">
-                        asda
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
+                </div>
+                  <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                     </div>
+
+
+                    <div class="card-body bg-black">
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
+                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
                 </div>
             </div>
+                  <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>
+
+
+                    <div class="card-body bg-black">
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
+                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
+                </div>
+            </div>
+                  <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>
+
+
+                    <div class="card-body bg-black">
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
+                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
+                </div>
+            </div>
+                  <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>
+
+
+                    <div class="card-body bg-black">
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
+                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
+                </div>
+            </div>
+                  <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>
+
+
+                    <div class="card-body bg-black">
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
+                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
+                </div>
+            </div>
+                  <div class="col-md-4">
+                <div class="card mt-4 border-0">
+                    <div class="card-header bg-black">
+                         <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>
+
+
+                    <div class="card-body bg-black">
+                        <a href="#"><img src="Images/netfilix.png" class="img-thumbnail" />
+                        </a>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <br />
+                            <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                            
+                        </div>
+                        
+                    </div>
+                    <%--<div class="card-footer bg-dark">
+                        Netfilix'te film keydini Kaçırmayın
+                        <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                    </div>--%>
+
+                </div>
+
+            </div>
+            </div>
+           
         </div>
     </div>
 </asp:Content>
