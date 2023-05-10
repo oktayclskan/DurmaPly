@@ -90,6 +90,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="UserPanel\Css\UserPanelMaster.css" />
+    <Content Include="UserPanel\Css\vanilla-tilt.js" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.min.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\brands.css" />

@@ -59,13 +59,22 @@
             </div>
 
         </nav>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-        
+
     </form>
+    <script type="text/javascript" src="Css/vanilla-tilt.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card")
+            ,{
+                max: 25,
+                speed: 400
+            });
+    </script>
 </body>
 </html>
 <div>
 </div>
-<script src="../Scripts/bootstrap.bundle.min.js"></script>
+
 

@@ -42,14 +42,83 @@
             </div>
             <div class="col-sm-4 righRow">
                 <h3 class="text-light">Dev İndirimler Başladı</h3>
+                <p class="text-light mt-5">Yüzlerce oyunda farklı oranlarda uygulanan indirimler başladı. Tüm indirimler stok sayılarına , sürelere göre ve günlük yeni stok eklemelerine göre değişecektir. Nisan ayı boyunca sürecek olan indirimleri her gün 1 kere kontrol etmenizi şiddetle öneririz. Keyifli Alışverişler..</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="card mt-4">
                     <div class="content">
+                        <div class="card-header bg-black">
+                            <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                        </div>
+                        <div class="card-body bg-black border-danger">
+                            <a href="#">
+                                <img src="Images/netfilix.png" class="img-thumbnail p-0 border-0" />
+                            </a>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <div class="row">
+                                <div class="col-md-8 stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <br />
+                                    <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                                </div>
+                                <div class="col-md-4 Price">
+                                    <div class="row first">
+                                        <div class="col-lg-4">
+                                            %19
+                                        </div>
+                                        <div class="col-lg-8 second ">
+                                            <h6 style="text-decoration:line-through;">TRY320,00</h6>
+                                            
+                                            TRY250,50
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="content">
+                        <div class="card-header bg-black">
+                            <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                        </div>
+                        <div class="card-body bg-black border-danger">
+                            <a href="#">
+                                <img src="Images/netfilix.png" class="img-thumbnail p-0 border-0" />
+                            </a>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <div class="row">
+                                <div class="col-md-8 stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <br />
+                                    <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                                </div>
+                                <div class="col-md-4 Price">
+                                    <div class="row first">
+                                        <div class="col-lg-4">
+                                            %19
+                                        </div>
+                                        <div class="col-lg-8 second ">
+                                            TRY250,50
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="content">
                         <div class="card-header bg-black">
                             <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                         </div>
@@ -82,4 +151,6 @@
                 </div>
             </div>
         </div>
+
+    </div>
 </asp:Content>
