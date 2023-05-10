@@ -53,7 +53,7 @@
                         <a href="#" class="nav-link text-light"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light"><i class="fa-regular fa-user"></i></a>
+                        <a href="Login.aspx" class="nav-link text-light"><i class="fa-regular fa-user"></i></a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,9 @@
         VanillaTilt.init(document.querySelectorAll(".card")
             ,{
                 max: 25,
-                speed: 400
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
             });
     </script>
 </body>

@@ -71,7 +71,6 @@
                                         </div>
                                         <div class="col-lg-8 second ">
                                             <h6 style="text-decoration:line-through;">TRY320,00</h6>
-                                            
                                             TRY250,50
                                         </div>
                                     </div>

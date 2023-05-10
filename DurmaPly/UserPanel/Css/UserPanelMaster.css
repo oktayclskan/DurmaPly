@@ -79,12 +79,6 @@ body {
         color: silver;
     }
 
-.Price {
-}
-
-.first {
-}
-
 .Price .first {
     background-color: forestgreen;
 }
@@ -94,3 +88,4 @@ body {
     font-size: 10pt;
     text-align: center;
 }
+
