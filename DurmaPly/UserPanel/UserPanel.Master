@@ -23,7 +23,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Mağaza</a>
+                        <a href="Index.aspx" class="nav-link text-light">Mağaza</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-light">Haberler</a>
@@ -47,7 +47,7 @@
                 </div>
                 <ul class="navbar nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light"><i class="fa-solid fa-globe"></i></a>
+                        <a href="Language.aspx" class="nav-link text-light"><i class="fa-solid fa-globe"></i></a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-light"><i class="fa-solid fa-cart-shopping"></i></a>

@@ -14,21 +14,101 @@
         <div class="container">
             <div class="carrier">
                 <img src="Images/world-of-warcraft-.jpg" class="backImg2" />
-                 <i style="color: black" class="fa-solid fa-xmark justify-content-end"></i>
-                <div class="content">
-                    <div class="head">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4 class="mt-2">Griş Yap</h4>
-                            </div>
-                            <div class="col-md-6">
-                                <h6 class="mt-3"><a href="#">Şifremi Unuttum</a></h6>
-                            </div>
+                <i style="color: black" class="fa-solid fa-xmark justify-content-end"></i>
+                <div class="contentLanguage">
+                    <h4 style="margin-left: 15px;" class="p-2 text-light">Dil ve Kur ayarları</h4>
+                    <div class="row" style="margin-left: 10px">
+                        <h4 class="text-dark">Dil</h4>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            العربية
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Azərbaycan
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Dansk
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Deutsch
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            English
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Ελληνικά
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Español
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            فارسی
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Français
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Indonesia
+                        </div>
+                        <div class="col-xl-2 bg-dark text-light m-1 mt-3">
+                            Italiano
+                        </div>
+                        <div class="col-xl-2 bg-dark text-light m-1 mt-3">
+                            日本語
+                        </div>
+                        <div class="col-xl-2 bg-dark text-light m-1 mt-3">
+                            한국어
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Nederlands
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Norsk
+                        </div>
+                        <div class="col-xl-3 bg-primary text-light m-1 mt-3">
+                            Türkçe
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Português
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Română
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Русский
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Svenska
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            ไทย
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Pilipino
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Polski
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Українська
+                        </div>
+                        <div class="col-xl-3 bg-dark text-light m-1 mt-3">
+                            Tiếng Việt
                         </div>
                     </div>
-                    <div class="main mt-5">
-                       
+                    <div class="row" style="margin-left: 10px">
+                        <h4 class="text-dark">Dil</h4>
+                        <div class="col-xl-3 text-light bg-primary m-1">
+                            TRY
+                        </div>
+                        <div class="col-xl-3 text-light bg-dark  m-1">
+                            USD
+                        </div>
+                        <div class="col-xl-3 text-light  bg-dark m-1">
+                            EUR
+                        </div>
                     </div>
+                </div>
+                <div class="main mt-3">
                 </div>
             </div>
         </div>

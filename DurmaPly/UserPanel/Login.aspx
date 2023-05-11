@@ -20,7 +20,7 @@
                     <div class="head">
                         <div class="row">
                             <div class="col-md-6">
-                                <h4 class="mt-2">Griş Yap</h4>
+                                <h4 class="mt-2">Giriş Yap</h4>
                             </div>
                             <div class="col-md-6">
                                 <h6 class="mt-3"><a href="#">Şifremi Unuttum</a></h6>
