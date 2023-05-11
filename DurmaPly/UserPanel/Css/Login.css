@@ -14,12 +14,25 @@
 body{
     background-color:black;
 }
-.deneme{
-    position:absolute;
-    width:1100px;
-    height:700px;
-    margin-top:5%;
-    margin-left:80px;
+.backImg {
+    position: absolute;
+    width: 1100px;
+    height: 700px;
+    margin-top: 5%;
+    margin-left: 80px;
+}
+.backImg2 {
+    position: absolute;
+   width:900px;
+   height:700px;
+    margin-top: 5%;
+    margin-left: 80px;
+}
+.exit{
+    padding:40px;
+    font-size:25pt;
+    color:blue;
+    
 }
 .content {
     margin-right: auto;

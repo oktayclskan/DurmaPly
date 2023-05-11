@@ -2158,8 +2158,10 @@
     <Content Include="UserPanel\Images\netfilix.png" />
     <Content Include="UserPanel\Images\Okito.jpg" />
     <Content Include="UserPanel\Images\starrgncl.jpg" />
+    <Content Include="UserPanel\Images\world-of-warcraft-.jpg" />
     <Content Include="UserPanel\Images\yayıncıımg.jpg" />
     <Content Include="UserPanel\Index.aspx" />
+    <Content Include="UserPanel\Language.aspx" />
     <Content Include="UserPanel\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -2171,6 +2173,13 @@
     </Compile>
     <Compile Include="UserPanel\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\Language.aspx.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\Language.aspx.designer.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
