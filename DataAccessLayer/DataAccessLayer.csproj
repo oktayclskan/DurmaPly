@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Admins.cs" />
     <Compile Include="ConnectionString.cs" />
+    <Compile Include="DataModel.cs" />
     <Compile Include="Games.cs" />
     <Compile Include="Members.cs" />
     <Compile Include="News.cs" />
