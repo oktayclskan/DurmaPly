@@ -11,6 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <a href="Index.aspx"><i class="fa-solid fa-xmark float-end exit fixed-top" style="width:35px"></i></a>
         <div class="container">
             <div class="carrier">
                 <img src="Images/world-of-warcraft-.jpg" class="backImg2" />

@@ -11,7 +11,7 @@ namespace DurmaPly.UserPanel
 {
 
 
-    public partial class Login
+    public partial class Register
     {
 
         /// <summary>
@@ -31,6 +31,15 @@ namespace DurmaPly.UserPanel
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_mail;
+
+        /// <summary>
+        /// tb_UserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_UserName;
 
         /// <summary>
         /// tb_Password control.

@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <a href="Index.aspx"><i class="fa-solid fa-xmark float-end exit fixed-top"></i></a>
+        <a href="Index.aspx"><i class="fa-solid fa-xmark float-end exit fixed-top" style="width:35px"></i></a>
         <div class="container">
             <div class="carrierr">
                 <img src="Images/Okito.jpg" class="backImg" />
@@ -30,11 +30,11 @@
                     <div class="main mt-5">
                         <div class="row">
                             <h6>Email</h6>
-                            <asp:TextBox ID="tb_mail" runat="server" CssClass="input form-control"></asp:TextBox>
+                            <asp:TextBox ID="tb_mail" runat="server" CssClass="input form-control bg-dark"></asp:TextBox>
                         </div>
                         <div class="row">
                             <h6>Sifre</h6>
-                            <asp:TextBox ID="tb_Password" runat="server" TextMode="Password" CssClass="input"></asp:TextBox>
+                            <asp:TextBox ID="tb_Password" runat="server" TextMode="Password" CssClass="bg-dark form-control input"></asp:TextBox>
                         </div>
                         <div class="row">
                             <asp:LinkButton ID="lbtn_login" runat="server" CssClass="btnlogin mt-2">Giriş Yap</asp:LinkButton>
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <asp:LinkButton ID="lbtn_Register" runat="server" CssClass="btnRegister">Hesap Oluştur</asp:LinkButton>
+                            <a href="Register.aspx" class="btnRegister">Hesap Oluştur</a>
                         </div>
                     </div>
                 </div>

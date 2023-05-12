@@ -16,7 +16,7 @@
                         <div class="carousel-item active">
                             <img src="Images/menu.jpg" class="w-100 h-50">
                             <div class="carousel-caption text-light">
-                                Kampanya yaptık gel gel
+                                Yüzlerle İndirimli oyun sizi bekliyor
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -42,7 +42,10 @@
             </div>
             <div class="col-sm-4 righRow">
                 <h3 class="text-light">Dev İndirimler Başladı</h3>
-                <p class="text-light mt-5">Yüzlerce oyunda farklı oranlarda uygulanan indirimler başladı. Tüm indirimler stok sayılarına , sürelere göre ve günlük yeni stok eklemelerine göre değişecektir. Nisan ayı boyunca sürecek olan indirimleri her gün 1 kere kontrol etmenizi şiddetle öneririz. Keyifli Alışverişler..</p>
+                <p class="text-secondary mt-4 m-4">Yüzlerce oyunda farklı oranlarda uygulanan indirimler başladı. Tüm indirimler stok sayılarına , sürelere göre ve günlük yeni stok eklemelerine göre değişecektir. Nisan ayı boyunca sürecek olan indirimleri her gün 1 kere kontrol etmenizi şiddetle öneririz. Keyifli Alışverişler..</p>
+                <div class="row">
+                    <a href="#" class="mt-5 m-3 text-white text-decoration-none">Hemen İncele...</a>
+                </div>
             </div>
         </div>
         <div class="row">

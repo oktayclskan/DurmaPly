@@ -116,3 +116,5 @@ C:\Users\rampa\OneDrive\Belgeler\GitHub\DurmaPly\DurmaPly\obj\Debug\DurmaPly.csp
 C:\Users\rampa\OneDrive\Belgeler\GitHub\DurmaPly\DurmaPly\obj\Debug\DurmaPly.csproj.CopyComplete
 C:\Users\rampa\OneDrive\Belgeler\GitHub\DurmaPly\DurmaPly\obj\Debug\DurmaPly.dll
 C:\Users\rampa\OneDrive\Belgeler\GitHub\DurmaPly\DurmaPly\obj\Debug\DurmaPly.pdb
+C:\Users\rampa\OneDrive\Belgeler\GitHub\DurmaPly\DurmaPly\bin\DataAccessLayer.dll
+C:\Users\rampa\OneDrive\Belgeler\GitHub\DurmaPly\DurmaPly\bin\DataAccessLayer.pdb

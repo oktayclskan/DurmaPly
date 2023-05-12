@@ -43,7 +43,8 @@ body{
     background-color: black;
     opacity: 0.8;
 }
-.content {
+
+.content{
     margin-right: auto;
     margin-left: auto;
     margin-top: 8%;
@@ -52,6 +53,35 @@ body{
     background-color: black;
     opacity: 0.8;
 }
+
+.contentR {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    width: 370px;
+    height: 800px;
+    background-color: black;
+    opacity: 0.8;
+}
+.contentR .head {
+    opacity: 1;
+}
+
+    .contentR .head h4 {
+        color: white;
+        padding: 10px;
+    }
+
+    .contentR .head h6 {
+        padding: 10px;
+    }
+
+    .contentR .head a {
+        color: whitesmoke;
+        background-color: #1370C4;
+        padding: 9px;
+        text-decoration: none;
+    }
 
     .content .head {
         opacity: 1;
@@ -74,7 +104,7 @@ body{
         }
 
 .main .row {
-    margin-left: 30px;
+    margin-left: 35px;
     width: 300px;
     margin-top: 10px;
 }
@@ -112,3 +142,4 @@ body{
         font-size: 15pt;
         padding: 4px;
     }
+
