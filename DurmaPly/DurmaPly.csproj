@@ -93,7 +93,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="UserPanel\Css\Login.css" />
     <Content Include="UserPanel\Css\UserPanelMaster.css" />
+    <Content Include="UserPanel\Css\UserPanelPages.css" />
     <Content Include="UserPanel\Css\vanilla-tilt.js" />
+    <Content Include="UserPanel\EscapeFromTarkov.aspx" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.min.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\brands.css" />
@@ -2153,12 +2155,15 @@
     <Content Include="UserPanel\Images\black.jpg" />
     <Content Include="UserPanel\Images\durma-icon.png" />
     <Content Include="UserPanel\Images\epic games.jpg" />
+    <Content Include="UserPanel\Images\escapefromtarkov-1638898094839.jpg" />
     <Content Include="UserPanel\Images\forza.jpg" />
+    <Content Include="UserPanel\Images\gta55.jpg" />
     <Content Include="UserPanel\Images\login son.jpg" />
     <Content Include="UserPanel\Images\menu.jpg" />
     <Content Include="UserPanel\Images\nefs.png" />
     <Content Include="UserPanel\Images\netfilix.png" />
     <Content Include="UserPanel\Images\Okito.jpg" />
+    <Content Include="UserPanel\Images\overwatch-2-button-fin-1656022954568.jpg" />
     <Content Include="UserPanel\Images\starrgncl.jpg" />
     <Content Include="UserPanel\Images\world-of-warcraft-.jpg" />
     <Content Include="UserPanel\Images\yayıncıımg.jpg" />
@@ -2167,6 +2172,7 @@
     <Content Include="UserPanel\Login.aspx" />
     <Content Include="UserPanel\News.aspx" />
     <Content Include="UserPanel\Register.aspx" />
+    <Content Include="UserPanel\Video\y2mate.com - Escape from Tarkov  Battle for Concordia Streets of Tarkov teaser 3_1080pFHR.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2185,6 +2191,13 @@
       <DependentUpon>Defauld.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserPanel\EscapeFromTarkov.aspx.cs">
+      <DependentUpon>EscapeFromTarkov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\EscapeFromTarkov.aspx.designer.cs">
+      <DependentUpon>EscapeFromTarkov.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPanel\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

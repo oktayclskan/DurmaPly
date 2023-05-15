@@ -88,4 +88,10 @@ body {
     font-size: 10pt;
     text-align: center;
 }
+.video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 

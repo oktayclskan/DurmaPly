@@ -56,8 +56,8 @@
                             <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                         </div>
                         <div class="card-body bg-black border-danger">
-                            <a href="#">
-                                <img src="Images/netfilix.png" class="img-thumbnail p-0 border-0" />
+                            <a href="EscapeFromTarkov.aspx">
+                                <img src="Images/escapefromtarkov-1638898094839.jpg" class="img-thumbnail p-0 border-0" />
                             </a>
                         </div>
                         <div class="card-footer bg-dark">
@@ -92,7 +92,7 @@
                         </div>
                         <div class="card-body bg-black border-danger">
                             <a href="#">
-                                <img src="Images/netfilix.png" class="img-thumbnail p-0 border-0" />
+                                <img src="Images/gta55.jpg" class="img-thumbnail p-0 border-0" />
                             </a>
                         </div>
                         <div class="card-footer bg-dark">
@@ -108,6 +108,7 @@
                                             %19
                                         </div>
                                         <div class="col-lg-8 second ">
+                                            <h6 style="text-decoration:line-through;">TRY320,00</h6>
                                             TRY250,50
                                         </div>
                                     </div>
@@ -126,7 +127,7 @@
                         </div>
                         <div class="card-body bg-black border-danger">
                             <a href="#">
-                                <img src="Images/netfilix.png" class="img-thumbnail p-0 border-0" />
+                                <img src="Images/nefs.png" class="img-thumbnail p-0 border-0" />
                             </a>
                         </div>
                         <div class="card-footer bg-dark">
@@ -142,6 +143,42 @@
                                             %19
                                         </div>
                                         <div class="col-lg-8 second ">
+                                            <h6 style="text-decoration:line-through;">TRY320,00</h6>
+                                            TRY250,50
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div class="content">
+                        <div class="card-header bg-black">
+                            <i class="fa-brands fa-steam-symbol text-light float-end"></i>
+                        </div>
+                        <div class="card-body bg-black border-danger">
+                            <a href="#">
+                                <img src="Images/overwatch-2-button-fin-1656022954568.jpg" class="img-thumbnail p-0 border-0" />
+                            </a>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <div class="row">
+                                <div class="col-md-8 stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    <br />
+                                    <h6>Netfilix'te film keydini Kaçırmayın</h6>
+                                </div>
+                                <div class="col-md-4 Price">
+                                    <div class="row first">
+                                        <div class="col-lg-4">
+                                            %19
+                                        </div>
+                                        <div class="col-lg-8 second ">
+                                            <h6 style="text-decoration:line-through;">TRY320,00</h6>
                                             TRY250,50
                                         </div>
                                     </div>
@@ -153,6 +190,7 @@
                 </div>
             </div>
         </div>
+
 
     </div>
 </asp:Content>

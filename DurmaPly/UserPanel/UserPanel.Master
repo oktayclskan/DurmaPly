@@ -7,6 +7,7 @@
     <title>DurmaPly</title>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="fontawesome-free-6.3.0-web/css/all.min.css" rel="stylesheet" />
+    <link href="Css/UserPanelPages.css" rel="stylesheet" />
     <link href="Css/UserPanelMaster.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -26,7 +27,7 @@
                         <a href="Index.aspx" class="nav-link text-light">Mağaza</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Haberler</a>
+                        <a href="News.aspx" class="nav-link text-light">Haberler</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-light">Yorumlar</a>
