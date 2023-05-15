@@ -2167,6 +2167,12 @@
     <Content Include="UserPanel\Images\starrgncl.jpg" />
     <Content Include="UserPanel\Images\world-of-warcraft-.jpg" />
     <Content Include="UserPanel\Images\yayıncıımg.jpg" />
+    <Content Include="UserPanel\imgNews\escapenews.jpg" />
+    <Content Include="UserPanel\imgNews\FifaNews.jpg" />
+    <Content Include="UserPanel\imgNews\FortniteNews.jpg" />
+    <Content Include="UserPanel\imgNews\needForSpeedNews.jpg" />
+    <Content Include="UserPanel\imgNews\overwatch-News.jpg" />
+    <Content Include="UserPanel\imgNews\overwatch-Newss.jpg" />
     <Content Include="UserPanel\Index.aspx" />
     <Content Include="UserPanel\Language.aspx" />
     <Content Include="UserPanel\Login.aspx" />

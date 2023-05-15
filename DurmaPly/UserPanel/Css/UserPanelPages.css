@@ -4,5 +4,22 @@
     box-sizing: border-box;
 }
 .container .contentNews{
-    margin-top:90px;
+    position:relative;
+    width:100%;
+    height:100%;
+   
+  
+   
 }
+    .container .contentNews .title{
+        padding:5px;
+        position:absolute;
+        margin-top:-35px;
+        color:whitesmoke;
+    }
+    .container .contentNews .date {
+        position: absolute;
+        padding:5px;
+        margin-top: -55px;
+        color:#6c6767;
+    }
