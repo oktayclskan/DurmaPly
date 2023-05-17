@@ -2173,6 +2173,14 @@
     <Content Include="UserPanel\Images\overwatch-2-button-fin-1656022954568.jpg" />
     <Content Include="UserPanel\Images\starrgncl.jpg" />
     <Content Include="UserPanel\Images\steamKod.jpg" />
+    <Content Include="UserPanel\Images\Streamear\13c9649e-88e4-4d70-b433-6fb4cafe3edd-profile_image-300x300.png" />
+    <Content Include="UserPanel\Images\Streamear\20e9d198-183b-452f-bc01-f64ca43aca61-profile_image-300x300.jpg" />
+    <Content Include="UserPanel\Images\Streamear\alper.png" />
+    <Content Include="UserPanel\Images\Streamear\c091d06e-4873-4673-9f85-d44fb1978938-profile_image-300x300.png" />
+    <Content Include="UserPanel\Images\Streamear\eray.png" />
+    <Content Include="UserPanel\Images\Streamear\hamdi.png" />
+    <Content Include="UserPanel\Images\Streamear\migrhen.png" />
+    <Content Include="UserPanel\Images\Streamear\zeon.png" />
     <Content Include="UserPanel\Images\tr_flag.png" />
     <Content Include="UserPanel\Images\world-of-warcraft-.jpg" />
     <Content Include="UserPanel\Images\yayıncıımg.jpg" />
@@ -2187,7 +2195,7 @@
     <Content Include="UserPanel\Login.aspx" />
     <Content Include="UserPanel\News.aspx" />
     <Content Include="UserPanel\Register.aspx" />
-    <Content Include="UserPanel\Twitch.aspx" />
+    <Content Include="UserPanel\Twicth.aspx" />
     <Content Include="UserPanel\Video\y2mate.com - Escape from Tarkov  Battle for Concordia Streets of Tarkov teaser 3_1080pFHR.mp4" />
     <Content Include="UserPanel\Video\y2mate.com - Grand Theft Auto V and Grand Theft Auto Online for PS5 and Xbox Series XS  Coming March 2022_1080p_Trim.mp4" />
     <Content Include="Web.config" />
@@ -2257,12 +2265,12 @@
     <Compile Include="UserPanel\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPanel\Twitch.aspx.cs">
-      <DependentUpon>Twitch.aspx</DependentUpon>
+    <Compile Include="UserPanel\Twicth.aspx.cs">
+      <DependentUpon>Twicth.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPanel\Twitch.aspx.designer.cs">
-      <DependentUpon>Twitch.aspx</DependentUpon>
+    <Compile Include="UserPanel\Twicth.aspx.designer.cs">
+      <DependentUpon>Twicth.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\UserPanel.Master.cs">
       <DependentUpon>UserPanel.Master</DependentUpon>

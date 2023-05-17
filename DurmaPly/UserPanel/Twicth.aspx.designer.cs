@@ -10,7 +10,7 @@
 
 namespace DurmaPly.UserPanel
 {
-    public partial class Twitch
+    public partial class Twicth
     {
     }
 }

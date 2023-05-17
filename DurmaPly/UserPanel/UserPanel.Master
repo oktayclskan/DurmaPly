@@ -33,7 +33,7 @@
                         <a href="#" class="nav-link text-light">Yorumlar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Twich</a>
+                        <a href="Twicth.aspx" class="nav-link text-light">Twich</a>
                     </li>
                 </ul>
                 <%--<div class="input-group-sm">
@@ -68,7 +68,7 @@
     <script src="../Scripts/bootstrap.bundle.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".card")
-            ,{
+            , {
                 max: 25,
                 speed: 400,
                 glare: true,
