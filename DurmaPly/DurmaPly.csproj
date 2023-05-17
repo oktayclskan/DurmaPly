@@ -2152,10 +2152,17 @@
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\yen-sign.svg" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\yin-yang.svg" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\z.svg" />
+    <Content Include="UserPanel\Gta5.aspx" />
+    <Content Include="UserPanel\Images\assassins-creed-serisi.jpg" />
     <Content Include="UserPanel\Images\black.jpg" />
+    <Content Include="UserPanel\Images\cod infinite.jpg" />
+    <Content Include="UserPanel\Images\dodo.png" />
     <Content Include="UserPanel\Images\durma-icon.png" />
     <Content Include="UserPanel\Images\epic games.jpg" />
     <Content Include="UserPanel\Images\escapefromtarkov-1638898094839.jpg" />
+    <Content Include="UserPanel\Images\eu_flag.png" />
+    <Content Include="UserPanel\Images\fifa-23-featured-.png" />
+    <Content Include="UserPanel\Images\FM22 Opengraph_0.jpg" />
     <Content Include="UserPanel\Images\forza.jpg" />
     <Content Include="UserPanel\Images\gta55.jpg" />
     <Content Include="UserPanel\Images\login son.jpg" />
@@ -2165,6 +2172,8 @@
     <Content Include="UserPanel\Images\Okito.jpg" />
     <Content Include="UserPanel\Images\overwatch-2-button-fin-1656022954568.jpg" />
     <Content Include="UserPanel\Images\starrgncl.jpg" />
+    <Content Include="UserPanel\Images\steamKod.jpg" />
+    <Content Include="UserPanel\Images\tr_flag.png" />
     <Content Include="UserPanel\Images\world-of-warcraft-.jpg" />
     <Content Include="UserPanel\Images\yayıncıımg.jpg" />
     <Content Include="UserPanel\imgNews\escapenews.jpg" />
@@ -2178,7 +2187,9 @@
     <Content Include="UserPanel\Login.aspx" />
     <Content Include="UserPanel\News.aspx" />
     <Content Include="UserPanel\Register.aspx" />
+    <Content Include="UserPanel\Twitch.aspx" />
     <Content Include="UserPanel\Video\y2mate.com - Escape from Tarkov  Battle for Concordia Streets of Tarkov teaser 3_1080pFHR.mp4" />
+    <Content Include="UserPanel\Video\y2mate.com - Grand Theft Auto V and Grand Theft Auto Online for PS5 and Xbox Series XS  Coming March 2022_1080p_Trim.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2203,6 +2214,13 @@
     </Compile>
     <Compile Include="UserPanel\EscapeFromTarkov.aspx.designer.cs">
       <DependentUpon>EscapeFromTarkov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\Gta5.aspx.cs">
+      <DependentUpon>Gta5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\Gta5.aspx.designer.cs">
+      <DependentUpon>Gta5.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -2238,6 +2256,13 @@
     </Compile>
     <Compile Include="UserPanel\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\Twitch.aspx.cs">
+      <DependentUpon>Twitch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\Twitch.aspx.designer.cs">
+      <DependentUpon>Twitch.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\UserPanel.Master.cs">
       <DependentUpon>UserPanel.Master</DependentUpon>
