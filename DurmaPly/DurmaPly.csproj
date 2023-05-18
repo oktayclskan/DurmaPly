@@ -91,10 +91,12 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="UserPanel\Comments.aspx" />
     <Content Include="UserPanel\Css\Login.css" />
     <Content Include="UserPanel\Css\UserPanelMaster.css" />
     <Content Include="UserPanel\Css\UserPanelPages.css" />
     <Content Include="UserPanel\Css\vanilla-tilt.js" />
+    <Content Include="UserPanel\deneme.aspx" />
     <Content Include="UserPanel\EscapeFromTarkov.aspx" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.min.css" />
@@ -2216,6 +2218,20 @@
       <DependentUpon>Defauld.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserPanel\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\deneme.aspx.cs">
+      <DependentUpon>deneme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\deneme.aspx.designer.cs">
+      <DependentUpon>deneme.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPanel\EscapeFromTarkov.aspx.cs">
       <DependentUpon>EscapeFromTarkov.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

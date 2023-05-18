@@ -30,7 +30,7 @@
                         <a href="News.aspx" class="nav-link text-light">Haberler</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Yorumlar</a>
+                        <a href="Comments.aspx" class="nav-link text-light">Yorumlar</a>
                     </li>
                     <li class="nav-item">
                         <a href="Twicth.aspx" class="nav-link text-light">Twich</a>
