@@ -1,0 +1,41 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container .contentNews{
+    position:relative;
+    width:100%;
+    height:100%;
+   
+  
+   
+}
+    .container .contentNews .title{
+        padding:5px;
+        position:absolute;
+        margin-top:-35px;
+        color:whitesmoke;
+    }
+    .container .contentNews .date {
+        position: absolute;
+        padding:5px;
+        margin-top: -55px;
+        color:#6c6767;
+    }
+.contentDesc{
+    margin-top: -100px;
+    
+
+}
+.denemehs{
+    height:600px;
+    width:1000px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:9%;
+}
+.searchBoxStream{
+
+}
+
