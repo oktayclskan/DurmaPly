@@ -126,7 +126,7 @@
                             <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                         </div>
                         <div class="card-body bg-black border-danger">
-                            <a href="#">
+                            <a href="NFS.aspx">
                                 <img src="Images/nefs.png" class="img-thumbnail p-0 border-0" />
                             </a>
                         </div>
@@ -161,7 +161,7 @@
                             <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                         </div>
                         <div class="card-body bg-black border-danger">
-                            <a href="#">
+                            <a href="FM2022.aspx">
                                 <img src="Images/FM22 Opengraph_0.jpg" class="img-thumbnail p-0 border-0" />
                             </a>
                         </div>
@@ -196,7 +196,7 @@
                             <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                         </div>
                         <div class="card-body bg-black border-danger">
-                            <a href="#">
+                            <a href="AssaienCred.aspx">
                                 <img src="Images/assassins-creed-serisi.jpg" class="img-thumbnail p-0 border-0" />
                             </a>
                         </div>
@@ -231,7 +231,7 @@
                             <i class="fa-brands fa-steam-symbol text-light float-end"></i>
                         </div>
                         <div class="card-body bg-black border-danger">
-                            <a href="#">
+                            <a href="Cod.aspx">
                                 <img src="Images/cod infinite.jpg" class="img-thumbnail p-0 border-0" />
                             </a>
                         </div>

@@ -91,6 +91,8 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="UserPanel\AssaienCred.aspx" />
+    <Content Include="UserPanel\Cod.aspx" />
     <Content Include="UserPanel\Comments.aspx" />
     <Content Include="UserPanel\Css\Login.css" />
     <Content Include="UserPanel\Css\UserPanelMaster.css" />
@@ -98,6 +100,7 @@
     <Content Include="UserPanel\Css\vanilla-tilt.js" />
     <Content Include="UserPanel\deneme.aspx" />
     <Content Include="UserPanel\EscapeFromTarkov.aspx" />
+    <Content Include="UserPanel\FM2022.aspx" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.min.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\brands.css" />
@@ -2196,10 +2199,15 @@
     <Content Include="UserPanel\Language.aspx" />
     <Content Include="UserPanel\Login.aspx" />
     <Content Include="UserPanel\News.aspx" />
+    <Content Include="UserPanel\NFS.aspx" />
     <Content Include="UserPanel\Register.aspx" />
     <Content Include="UserPanel\Twicth.aspx" />
+    <Content Include="UserPanel\Video\son_Trim.mp4" />
+    <Content Include="UserPanel\Video\y2mate.com - Assassins CreedOfficial TrailerHD1080p_1080p.mp4" />
     <Content Include="UserPanel\Video\y2mate.com - Escape from Tarkov  Battle for Concordia Streets of Tarkov teaser 3_1080pFHR.mp4" />
+    <Content Include="UserPanel\Video\y2mate.com - Football Manager 2022  Official Launch Trailer_1080p.mp4" />
     <Content Include="UserPanel\Video\y2mate.com - Grand Theft Auto V and Grand Theft Auto Online for PS5 and Xbox Series XS  Coming March 2022_1080p_Trim.mp4" />
+    <Content Include="UserPanel\Video\y2mate.com - Need for Speed Payback Official Gameplay Trailer_1080p.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2218,6 +2226,20 @@
       <DependentUpon>Defauld.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserPanel\AssaienCred.aspx.cs">
+      <DependentUpon>AssaienCred.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\AssaienCred.aspx.designer.cs">
+      <DependentUpon>AssaienCred.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\Cod.aspx.cs">
+      <DependentUpon>Cod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\Cod.aspx.designer.cs">
+      <DependentUpon>Cod.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPanel\Comments.aspx.cs">
       <DependentUpon>Comments.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2238,6 +2260,13 @@
     </Compile>
     <Compile Include="UserPanel\EscapeFromTarkov.aspx.designer.cs">
       <DependentUpon>EscapeFromTarkov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\FM2022.aspx.cs">
+      <DependentUpon>FM2022.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\FM2022.aspx.designer.cs">
+      <DependentUpon>FM2022.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Gta5.aspx.cs">
       <DependentUpon>Gta5.aspx</DependentUpon>
@@ -2273,6 +2302,13 @@
     </Compile>
     <Compile Include="UserPanel\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\NFS.aspx.cs">
+      <DependentUpon>NFS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\NFS.aspx.designer.cs">
+      <DependentUpon>NFS.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
