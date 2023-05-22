@@ -53,7 +53,63 @@ namespace DataAccessLayer
             }
             finally { con.Close(); }
         }
-
+        public bool GameAdd(Games g)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Game (Name,Content,Price,GameDateTime,Img,Video,discountRate,noDiscount) VALUES (@name,@content,@price,@gameDateTime,@img,@video,@discountRate,@noDiscount)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name",g.Name);
+                cmd.Parameters.AddWithValue("@content", g.Content);
+                cmd.Parameters.AddWithValue("@price", g.Price);
+                cmd.Parameters.AddWithValue("@gameDateTime", g.DateTime);
+                cmd.Parameters.AddWithValue("@img", g.img);
+                cmd.Parameters.AddWithValue("@video", g.Video);
+                cmd.Parameters.AddWithValue("@discountRate", g.DiscountRate);
+                cmd.Parameters.AddWithValue("@noDiscount", g.noDiscount);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public Games GameGet(int id)
+        {
+            try
+            {
+                cmd.CommandText = "Select ID,Name,Content,Price,GameDateTime,Img,Video,discountRate,noDiscount From Game WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                Games gm = new Games();
+                while (reader.Read())
+                {
+                    gm.ID = reader.GetInt32(0);
+                    gm.Name = reader.GetString(1);
+                    gm.Content = reader.GetString(2);
+                    gm.Price = reader.GetDecimal(3);
+                    gm.DateTime = reader.GetDateTime(4);
+                    gm.img = reader.GetString(5);
+                    gm.Video = reader.GetString(6);
+                    gm.DiscountRate = reader.GetString(7);
+                    gm.noDiscount = reader.GetString(8);
+                }
+                return gm;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         #endregion
         #region News Metots
        

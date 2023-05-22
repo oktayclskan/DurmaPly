@@ -32,7 +32,7 @@
                                 <span class="input-group-text">0.00</span>
                                 <asp:TextBox ID="tb_discountRate" runat="server" class="form-control" placeholder="İndirimli Fiyat" aria-label="Dollar amount (with dot and two decimal places)"></asp:TextBox>
                             </div>
-
+                            
                             <div class="input-group">
                                 <asp:TextBox ID="tb_noDiscount" runat="server" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="İndirimsiz Fiyat"></asp:TextBox>
                                 <span class="input-group-text">$</span>
