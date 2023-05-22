@@ -13,5 +13,10 @@ namespace DurmaPly.AdminPanel
         {
 
         }
+
+        protected void lbtn_exit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

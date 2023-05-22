@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class News
+    public class Comment
     {
         public int ID { get; set; }
-        public string NewsViews { get; set; }
-        public string Title { get; set; }
+        public int MemberID { get; set; }
         public string Content { get; set; }
-        public DateTime NewsDateTime { get; set; }
     }
 }

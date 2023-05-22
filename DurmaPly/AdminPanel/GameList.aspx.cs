@@ -8,14 +8,17 @@ using DataAccessLayer;
 
 namespace DurmaPly.AdminPanel
 {
-    public partial class Defauld : System.Web.UI.Page
+    public partial class GameList : System.Web.UI.Page
     {
-        
+        DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Request.QueryString.Count == 0)
+            {
+                lv_game.DataSource = dm.GameList();
+                lv_game.DataBind();
 
-
+            }
         }
     }
 }

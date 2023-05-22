@@ -2,3 +2,22 @@
     margin:0;
     padding:0;
 }
+.navbar {
+    background-color: #111111;
+}
+
+.container-fluid .seacrh i {
+    padding: 9px;
+    color: white;
+    margin-top: 13px;
+}
+
+
+.container-fluid .header {
+    width: 100%;
+}
+    .container-fluid .header h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 25pt;
+        text-align:center;
+    }

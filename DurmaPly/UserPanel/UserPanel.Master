@@ -36,12 +36,6 @@
                         <a href="Twicth.aspx" class="nav-link text-light">Twich</a>
                     </li>
                 </ul>
-                <%--<div class="input-group-sm">
-                    <asp:LinkButton ID="lbtn_search" runat="server" CssClass="btn btn-primary position-absolute">
-                        <i class="fa-brands fa-searchengin"></i>
-                    </asp:LinkButton>
-                    <input type="text" class="form-control" placeholder="ara"/>
-                </div>--%>
                 <div class="seacrh">
                     <i style="width: 50px;" class="fa-solid fa-magnifying-glass position-absolute"></i>
                     <asp:TextBox ID="tb_seacrh" runat="server" CssClass="Stexbox">indirim</asp:TextBox>
