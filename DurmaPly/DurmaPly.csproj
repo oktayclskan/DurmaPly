@@ -94,9 +94,11 @@
     <Content Include="AdminPanel\deneme.aspx" />
     <Content Include="AdminPanel\GameAdd.aspx" />
     <Content Include="AdminPanel\GameList.aspx" />
+    <Content Include="AdminPanel\GameUpdate.aspx" />
     <Content Include="AdminPanel\Images\profil.png" />
     <Content Include="AdminPanel\NewsAdd.aspx" />
     <Content Include="AdminPanel\NewsList.aspx" />
+    <Content Include="AdminPanel\NewsUpdate.aspx" />
     <Content Include="AdminPanel\PublisherAdd.aspx" />
     <Content Include="AdminPanel\PublisherList.aspx" />
     <Content Include="AdminPanel\thema\dashboard\dashboard.css" />
@@ -2277,6 +2279,13 @@
     <Compile Include="AdminPanel\GameList.aspx.designer.cs">
       <DependentUpon>GameList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel\GameUpdate.aspx.cs">
+      <DependentUpon>GameUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\GameUpdate.aspx.designer.cs">
+      <DependentUpon>GameUpdate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPanel\NewsAdd.aspx.cs">
       <DependentUpon>NewsAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2290,6 +2299,13 @@
     </Compile>
     <Compile Include="AdminPanel\NewsList.aspx.designer.cs">
       <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\NewsUpdate.aspx.cs">
+      <DependentUpon>NewsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\NewsUpdate.aspx.designer.cs">
+      <DependentUpon>NewsUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel\PublisherAdd.aspx.cs">
       <DependentUpon>PublisherAdd.aspx</DependentUpon>

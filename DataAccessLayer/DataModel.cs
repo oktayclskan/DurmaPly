@@ -92,6 +92,42 @@ namespace DataAccessLayer
             }
             finally { con.Close(); }
         }
+        public bool PublisherUpdate(Publisher pb)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Publisher Set Name=@name,Img=@img WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",pb.ID);
+                cmd.Parameters.AddWithValue("@name",pb.Name);
+                cmd.Parameters.AddWithValue("@img",pb.Img);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public bool PublisherDlt(int id)
+        {
+            try
+            {
+                cmd.CommandText = "Delete From Publisher Where ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
         #endregion
         #region Games Metots
         public List<Games> GameList()
@@ -182,6 +218,47 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+        public bool GameUpdate(Games g)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Game Set Name=@name,Content=@content,Img=@img,Video=@video,discountRate=@discountRate,noDiscount=@noDiscount,discountPercentage=@discountPercentage WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",g.ID);
+                cmd.Parameters.AddWithValue("@name", g.Name);
+                cmd.Parameters.AddWithValue("@content", g.Content);
+                cmd.Parameters.AddWithValue("@img", g.img);
+                cmd.Parameters.AddWithValue("@video", g.Video);
+                cmd.Parameters.AddWithValue("@discountRate", g.DiscountRate);
+                cmd.Parameters.AddWithValue("@noDiscount", g.noDiscount);
+                cmd.Parameters.AddWithValue("@discountPercentage", g.discountPercentage);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public bool GameDlt(int id)
+        {
+            try
+            {
+                cmd.CommandText = "Delete From Game WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
         #endregion
         #region News Metots
         public List<news> NewsList()
@@ -250,6 +327,45 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@content", n.Content);
                 cmd.Parameters.AddWithValue("@newsdatetime", n.NewsDateTime);
                 cmd.Parameters.AddWithValue("@img", n.Img);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public bool NewsUpdate(news n)
+        {
+            try
+            {
+                cmd.CommandText = "Update News Set Title=@title,Content=@content,Img=@img WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",n.ID);
+                cmd.Parameters.AddWithValue("@content",n.Content);
+                cmd.Parameters.AddWithValue("@img",n.Img);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public bool NewsDlt(int id)
+        {
+            try
+            {
+                cmd.CommandText = "Delete From News WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
