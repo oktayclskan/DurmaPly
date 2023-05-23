@@ -67,8 +67,6 @@
                                             <span data-feather="shopping-cart" class="align-text-bottom"></span>
                                             Oyun Ekle
                                         </a>
-
-
                                 </ul>
 
                                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
@@ -79,13 +77,13 @@
                                 </h6>
                                 <ul class="nav flex-column mb-2">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="PublisherList.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
                                             Yayıncı işlemleri(Ekle,Sil,Düzenle)
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="PublisherAdd.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
                                             Yayıncı Ekle
                                         </a>
@@ -100,13 +98,13 @@
                                 </h6>
                                 <ul class="nav flex-column mb-2">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="NewsList.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
-                                            Haber İşlemleri(Ekle,Sil,Düzenle)
+                                            Haber İşlemleri(Listele,Sil,Düzenle)
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="NewsAdd.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
                                             Haber Paylaş
                                         </a>

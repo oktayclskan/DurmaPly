@@ -11,11 +11,11 @@ namespace DataAccessLayer
         public int ID { get; set; }
         public string Name { get; set; }
         public string Content { get; set; }
-        public decimal Price { get; set; }
+        public string discountPercentage { get; set; }
         public string img { get; set; }
         public DateTime DateTime { get; set; }
         public string Video { get; set; }
-        public string DiscountRate { get; set; }
-        public string noDiscount { get; set; }
+        public decimal DiscountRate { get; set; }
+        public decimal noDiscount { get; set; }
     }
 }

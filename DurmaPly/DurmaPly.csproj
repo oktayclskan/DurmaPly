@@ -95,6 +95,10 @@
     <Content Include="AdminPanel\GameAdd.aspx" />
     <Content Include="AdminPanel\GameList.aspx" />
     <Content Include="AdminPanel\Images\profil.png" />
+    <Content Include="AdminPanel\NewsAdd.aspx" />
+    <Content Include="AdminPanel\NewsList.aspx" />
+    <Content Include="AdminPanel\PublisherAdd.aspx" />
+    <Content Include="AdminPanel\PublisherList.aspx" />
     <Content Include="AdminPanel\thema\dashboard\dashboard.css" />
     <Content Include="AdminPanel\thema\dashboard\dashboard.js" />
     <Content Include="AdminPanel\thema\dashboard\dashboard.rtl.css" />
@@ -121,16 +125,12 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="UserPanel\AssaienCred.aspx" />
-    <Content Include="UserPanel\Cod.aspx" />
     <Content Include="UserPanel\Comments.aspx" />
     <Content Include="UserPanel\Css\Login.css" />
     <Content Include="UserPanel\Css\UserPanelMaster.css" />
     <Content Include="UserPanel\Css\UserPanelPages.css" />
     <Content Include="UserPanel\Css\vanilla-tilt.js" />
     <Content Include="UserPanel\deneme.aspx" />
-    <Content Include="UserPanel\EscapeFromTarkov.aspx" />
-    <Content Include="UserPanel\FM2022.aspx" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\all.min.css" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\css\brands.css" />
@@ -2187,6 +2187,7 @@
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\yen-sign.svg" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\yin-yang.svg" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\z.svg" />
+    <Content Include="UserPanel\GameRead.aspx" />
     <Content Include="UserPanel\Gta5.aspx" />
     <Content Include="UserPanel\Images\assassins-creed-serisi.jpg" />
     <Content Include="UserPanel\Images\black.jpg" />
@@ -2229,7 +2230,7 @@
     <Content Include="UserPanel\Language.aspx" />
     <Content Include="UserPanel\Login.aspx" />
     <Content Include="UserPanel\News.aspx" />
-    <Content Include="UserPanel\NFS.aspx" />
+    <Content Include="UserPanel\NewsRead.aspx" />
     <Content Include="UserPanel\Register.aspx" />
     <Content Include="UserPanel\Twicth.aspx" />
     <Content Include="UserPanel\Video\son_Trim.mp4" />
@@ -2276,21 +2277,35 @@
     <Compile Include="AdminPanel\GameList.aspx.designer.cs">
       <DependentUpon>GameList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel\NewsAdd.aspx.cs">
+      <DependentUpon>NewsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\NewsAdd.aspx.designer.cs">
+      <DependentUpon>NewsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\PublisherAdd.aspx.cs">
+      <DependentUpon>PublisherAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\PublisherAdd.aspx.designer.cs">
+      <DependentUpon>PublisherAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\PublisherList.aspx.cs">
+      <DependentUpon>PublisherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\PublisherList.aspx.designer.cs">
+      <DependentUpon>PublisherList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserPanel\AssaienCred.aspx.cs">
-      <DependentUpon>AssaienCred.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPanel\AssaienCred.aspx.designer.cs">
-      <DependentUpon>AssaienCred.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserPanel\Cod.aspx.cs">
-      <DependentUpon>Cod.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPanel\Cod.aspx.designer.cs">
-      <DependentUpon>Cod.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UserPanel\Comments.aspx.cs">
       <DependentUpon>Comments.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2305,19 +2320,12 @@
     <Compile Include="UserPanel\deneme.aspx.designer.cs">
       <DependentUpon>deneme.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPanel\EscapeFromTarkov.aspx.cs">
-      <DependentUpon>EscapeFromTarkov.aspx</DependentUpon>
+    <Compile Include="UserPanel\GameRead.aspx.cs">
+      <DependentUpon>GameRead.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPanel\EscapeFromTarkov.aspx.designer.cs">
-      <DependentUpon>EscapeFromTarkov.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserPanel\FM2022.aspx.cs">
-      <DependentUpon>FM2022.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPanel\FM2022.aspx.designer.cs">
-      <DependentUpon>FM2022.aspx</DependentUpon>
+    <Compile Include="UserPanel\GameRead.aspx.designer.cs">
+      <DependentUpon>GameRead.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Gta5.aspx.cs">
       <DependentUpon>Gta5.aspx</DependentUpon>
@@ -2354,12 +2362,12 @@
     <Compile Include="UserPanel\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserPanel\NFS.aspx.cs">
-      <DependentUpon>NFS.aspx</DependentUpon>
+    <Compile Include="UserPanel\NewsRead.aspx.cs">
+      <DependentUpon>NewsRead.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserPanel\NFS.aspx.designer.cs">
-      <DependentUpon>NFS.aspx</DependentUpon>
+    <Compile Include="UserPanel\NewsRead.aspx.designer.cs">
+      <DependentUpon>NewsRead.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

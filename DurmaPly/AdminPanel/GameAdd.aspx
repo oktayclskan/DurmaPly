@@ -21,7 +21,7 @@
                     <div class="col">
                         <asp:TextBox ID="tb_name" CssClass="form-control mt-2" runat="server" placeholder="Oyun ismi"></asp:TextBox>
                         <div>
-                            <asp:TextBox ID="tb_price" CssClass="form-control  mt-2" runat="server" placeholder="Fiyat"></asp:TextBox>
+                            <asp:TextBox ID="tb_discountPercentage" CssClass="form-control  mt-2" runat="server" placeholder="İndirim yüzdesi"></asp:TextBox>
                         </div>
                         <div>
                             <asp:TextBox ID="tb_content" TextMode="MultiLine" CssClass="form-control  mt-2" runat="server" placeholder="içerik"></asp:TextBox>

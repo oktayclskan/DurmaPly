@@ -12,7 +12,6 @@
                             <td>ID</td>
                             <td>Oyun Adı</td>
                             <td>İçerik</td>
-                            <td>Fiyat</td>
                             <td>Yayın Tarihi</td>
                             <td>İndirimsiz Fiyat</td>
                             <td>İndirimli Fiyat</td>
@@ -31,11 +30,12 @@
                         <td><%# Eval("ID") %></td>
                         <td><%# Eval("Name") %></td>
                         <td><%# Eval("Content") %></td>
-                        <td><%# Eval("Price") %></td>
                         <td><%# Eval("DateTime") %></td>
                         <td><%# Eval("noDiscount") %></td>
                         <td><%# Eval("DiscountRate") %></td>
-                        <td><%# Eval("img") %></td>
+                         <td>
+                            <img src="../AdminPanel/Images/<%# Eval("img") %>" width="30" />
+                        </td>
                         <td><%# Eval("Video") %></td>
                         <td> 
                             <asp:LinkButton ID="btn_dlt" CssClass="btn btn-danger" runat="server">Sil</asp:LinkButton>

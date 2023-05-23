@@ -4,14 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DataAccessLayer;
 
-namespace DurmaPly.UserPanel
+namespace DurmaPly.AdminPanel
 {
-    public partial class AssaienCred : System.Web.UI.Page
+    public partial class NewsList : System.Web.UI.Page
     {
+        DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lv_news.DataSource = dm.NewsList();
+            lv_news.DataBind();
         }
     }
 }

@@ -14,16 +14,4 @@
 
 
 
-    <%--    <div class="container">
-
-    <asp:Repeater ID="rp_Game" runat="server">
-        <ItemTemplate>
-            <div class="container">
-                <div style="margin-top: 150px; color: blue;">
-                    <h1><%# Eval("Name") %></h1>
-                </div>
-            </div>
-        </ItemTemplate>
-    </asp:Repeater>
-    </div>--%>
 </asp:Content>

@@ -51,13 +51,13 @@ namespace DurmaPly.AdminPanel
         protected global::System.Web.UI.WebControls.TextBox tb_name;
 
         /// <summary>
-        /// tb_price control.
+        /// tb_discountPercentage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_price;
+        protected global::System.Web.UI.WebControls.TextBox tb_discountPercentage;
 
         /// <summary>
         /// tb_content control.

@@ -21,65 +21,56 @@ namespace DurmaPly.AdminPanel
         {
             if (!string.IsNullOrEmpty(tb_name.Text.Trim()))
             {
-                if (!string.IsNullOrEmpty(tb_price.Text.Trim()))
+                if (!string.IsNullOrEmpty(tb_content.Text.Trim()))
                 {
-                    if (!string.IsNullOrEmpty(tb_content.Text.Trim()))
+                    if (!string.IsNullOrEmpty(tb_discountRate.Text.Trim()))
                     {
-                        if (!string.IsNullOrEmpty(tb_discountRate.Text.Trim()))
+                        if (!string.IsNullOrEmpty(tb_noDiscount.Text.Trim()))
                         {
-                            if (!string.IsNullOrEmpty(tb_noDiscount.Text.Trim()))
+                            Games gm = new Games();
+                            gm.Name = tb_name.Text;
+                            gm.Content = tb_content.Text;
+                            gm.DiscountRate = Convert.ToDecimal(tb_discountRate.Text);
+                            gm.noDiscount = Convert.ToDecimal(tb_noDiscount.Text);
+                            gm.DateTime = DateTime.Now;
+                            gm.discountPercentage = tb_discountPercentage.Text;
+                            if (fu_img.HasFile)
                             {
-                                Games gm = new Games();
-                                gm.Name = tb_name.Text;
-                                gm.Price = Convert.ToDecimal(tb_price.Text);
-                                gm.Content = tb_content.Text;
-                                gm.DiscountRate = tb_discountRate.Text;
-                                gm.noDiscount = tb_noDiscount.Text;
-                                gm.DateTime = DateTime.Now;
-                                if (fu_img.HasFile)
+                                FileInfo fi = new FileInfo(fu_img.FileName);
+                                string extenison = fi.Extension;
+                                string name = Guid.NewGuid().ToString();
+                                gm.img = name + extenison;
+                                fu_img.SaveAs(Server.MapPath("../AdminPanel/Images/" + name + extenison));
+
+
+                                if (fu_video.HasFile)
                                 {
-                                    FileInfo fi = new FileInfo(fu_img.FileName);
-                                    string extenison = fi.Extension;
-                                    string name = Guid.NewGuid().ToString();
-                                    gm.img = name + extenison;
-                                    fu_img.SaveAs(Server.MapPath("../AdminPanel/Images/" + name + extenison));
-
-
-                                    if (fu_video.HasFile)
+                                    FileInfo fv = new FileInfo(fu_video.FileName);
+                                    string extensionvdn = fv.Extension;
+                                    string namevd = Guid.NewGuid().ToString();
+                                    gm.Video = namevd + extensionvdn;
+                                    fu_video.SaveAs(Server.MapPath("../AdminPanel/Video/") + namevd + extensionvdn);
+                                    if (dm.GameAdd(gm))
                                     {
-                                        FileInfo fv = new FileInfo(fu_video.FileName);
-                                        string extensionvdn = fv.Extension;
-                                        string namevd = Guid.NewGuid().ToString();
-                                        gm.Video = namevd + extensionvdn;
-                                        fu_video.SaveAs(Server.MapPath("../AdminPanel/Video/") + namevd + extensionvdn);
-                                        if (dm.GameAdd(gm))
-                                        {
-                                            pnl_succes.Visible = true;
-                                        }
-                                        else
-                                        {
-                                            pnl_error.Visible = true;
-                                            lbl_eror.Text = "Ekleme Başarısız";
-                                        }
-
+                                        pnl_succes.Visible = true;
                                     }
                                     else
                                     {
                                         pnl_error.Visible = true;
-                                        lbl_eror.Text = "lütfen video seçiniz";
+                                        lbl_eror.Text = "Ekleme Başarısız";
                                     }
+
                                 }
                                 else
                                 {
                                     pnl_error.Visible = true;
-                                    lbl_eror.Text = "Lütfen Resim Seçiniz";
+                                    lbl_eror.Text = "lütfen video seçiniz";
                                 }
-
                             }
                             else
                             {
                                 pnl_error.Visible = true;
-                                lbl_eror.Text = "Fiyat Bilgisi Boş Bırakılamaz";
+                                lbl_eror.Text = "Lütfen Resim Seçiniz";
                             }
 
                         }
@@ -88,18 +79,20 @@ namespace DurmaPly.AdminPanel
                             pnl_error.Visible = true;
                             lbl_eror.Text = "Fiyat Bilgisi Boş Bırakılamaz";
                         }
+
                     }
                     else
                     {
                         pnl_error.Visible = true;
-                        lbl_eror.Text = "İçerik Boş Bırakılamaz";
+                        lbl_eror.Text = "Fiyat Bilgisi Boş Bırakılamaz";
                     }
                 }
                 else
                 {
                     pnl_error.Visible = true;
-                    lbl_eror.Text = "Fiyat Boş Bırakılamaz";
+                    lbl_eror.Text = "İçerik Boş Bırakılamaz";
                 }
+
             }
             else
             {

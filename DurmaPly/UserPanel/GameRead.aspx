@@ -1,15 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPanel/UserPanel.Master" AutoEventWireup="true" CodeBehind="NFS.aspx.cs" Inherits="DurmaPly.UserPanel.NFS" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPanel/UserPanel.Master" AutoEventWireup="true" CodeBehind="GameRead.aspx.cs" Inherits="DurmaPly.UserPanel.GameRead" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
-        <video class="video w-100 h-100 mb-3" src="Video/y2mate.com - Need for Speed Payback Official Gameplay Trailer_1080p.mp4" autoplay muted />
+    <div class="container-fluid" style="margin-top: 85px">
+
     </div>
+
     <div class="container text-light">
         <div class="contentDesc">
             <div class="row">
                 <div class="col-xl-6">
-                    <h3>Need for Speed</h3>
+                    <h3>
+                        <asp:Literal ID="ltrl_GameName" runat="server"></asp:Literal>
+                    </h3>
                 </div>
                 <div class="col-xl-6">
                     <div class="row">
@@ -19,11 +23,13 @@
                                     <img src="Images/dodo.png" />
                                 </div>
                                 <div class="col-lg-2">
-                                    19%
+                                    <span>
+                                        <asp:Literal ID="ltrl_discountPercentage" runat="server"></asp:Literal>
+                                    </span>
                                 </div>
                                 <div class="col-lg-4 second ">
-                                    <h6 style="padding-top:10px">TRY276,50 </h6>
-                                    
+                                    <h6 style="padding-top: 10px">TRY289,50 </h6>
+
                                 </div>
                                 <div class="col-lg-3 Price ">
                                     <h6 style="padding-top: 9px; padding-left: 2px" class="mt-auto">Satın Al</h6>
@@ -41,12 +47,15 @@
         <div class="contentInformation mt-5">
             <div class="row">
                 <div class="col-md-3">
-                    Nasıl aktif edilir? <br />
-                    Kullanılabilecek bölgeler <br />
-                    <img src="Images/tr_flag.png" width="35" />
-                    <img src="Images/eu_flag.png" width="35" /> 
+                    Nasıl aktif edilir?
                     <br />
-                    Etiketler <br />
+                    Kullanılabilecek bölgeler
+                    <br />
+                    <img src="Images/tr_flag.png" width="35" />
+                    <img src="Images/eu_flag.png" width="35" />
+                    <br />
+                    Etiketler
+                    <br />
                     *Modern
                     *First Person
                     *Arcade
@@ -55,7 +64,7 @@
                 </div>
                 <div class="col-md-9">
                     <p class="bg-black text-light">
-                      Need for Speed satın alma işleminizden sonra Origin cd key olarak teslim edilmektedir. Need for Speed Origin üzerinden indirilip oynanabilir. İnternet bağlantısı gerekir. Sokaklara sahip olmaya hazır mısın? İkonik otomobillerin arkasına geçin ve genişleyen bir kentsel oyun alanı olan Ventura Körfezi'nden geçin. Şöhretinizi - ve hayalinizdeki arabasını - oluştururken üst üste gelen hikayeleri keşfedin ve nihai yarış simgesi olun. Need for Speed satın al, yarışa hemen başla.
+                        GTA 5 satın alma işleminden sonra Rockstar Games CD Key olarak teslim edilir. Online olarak oynayabilirsiniz. Aktivasyon ve kurulum Rockstar Games üzerinden yapılmaktadır. GTA 5 Steam üzerinde kullanılamaz. GTA V PC Rockstar Games Launcher üzerinde kullanılabilir. Yüzlerce farklı karayolu aracına ek olarak uçak, denizaltı ve hatta planör gibi araçlardan faydalanmaya imkan veren yapisi ile GTA 5, “ Açik Dünya “ kavramının gerçekten en yoğun yasandığı oyunlardan birisi olarak da nitelendirilebilmekte. Kişi GTA V tecrübesi süresince ister hikayeyi ve görevleri takip ederek sona ulasmaya çalışacaği gibi, istediginde de Los Santos’un kendisine sunduğu sınırsız olanaklar ile yaşayan bir şehir içerisinde sanal hayatını keyifli ve değişken biçimde sürdürmeye devam edebilir.
                     </p>
                 </div>
             </div>
