@@ -16,6 +16,106 @@ namespace DataAccessLayer
             cmd = con.CreateCommand();
         }
         #region Admin Metots
+        public List<Admins> AdminList()
+        {
+            List<Admins> admins = new List<Admins>();
+            try
+            {
+                cmd.CommandText = "SELECT * From Admins";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Admins a = new Admins();
+                    a.ID = reader.GetInt32(0);
+                    a.Name = reader.GetString(1);
+                    a.Surname = reader.GetString(2);
+                    a.Mail = reader.GetString(3);
+                    a.AdminPassword = reader.GetString(4);
+                    a.Phone = reader.GetString(5);
+                    admins.Add(a);
+                }
+                return admins;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public bool AdminAdd(Admins a)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Admins (Name,Surname,Mail,AdminPassword,Phone) VALUES (@name,@surname,@mail,@adminPassword,@phone)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name",a.Name);
+                cmd.Parameters.AddWithValue("@surname", a.Surname);
+                cmd.Parameters.AddWithValue("@mail", a.Mail);
+                cmd.Parameters.AddWithValue("@adminPassword", a.AdminPassword);
+                cmd.Parameters.AddWithValue("@phone", a.Phone);
+                con.Open();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public bool AdminDlt(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE Admin WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public Admins AdminGet(int id)
+        {
+            try
+            {
+                cmd.CommandText = "Select ID,Name,Surname,Mail,AdminPassword,Phone From Admins Where ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                Admins a = new Admins();
+                while (reader.Read())
+                {
+                    a.ID = reader.GetInt32(0);
+                    a.Name = reader.GetString(1);
+                    a.Surname = reader.GetString(2);
+                    a.Mail = reader.GetString(3);
+                    a.AdminPassword = reader.GetString(4);
+                    a.Phone = reader.GetString(5);
+                }
+                return a;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        
 
         #endregion
         #region Member Metots
@@ -54,10 +154,52 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "Select ID,Name,Surname,Mail,MemberPassword From Member WHERE ID=@id";
+                cmd.CommandText = "Select ID,Name,Surname,UserName,Mail,MemberPassword From Member WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",id);
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                Members m = new Members();
+                while (reader.Read())
+                {
+                    m.ID = reader.GetInt32(0);
+                    m.Name = reader.GetString(1);
+                    m.Surname = reader.GetString(2);
+                    m.UserName = reader.GetString(3);
+                    m.Mail = reader.GetString(4);
+                    m.MemberPassword = reader.GetString(5);
+                }
+                return m;
             }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                { con.Close(); }
+            }
+        }
+        public bool MemberDlt(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE Comment WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                cmd.CommandText = "DELETE Member WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
         }
         #endregion
         #region Publisher Metots
@@ -92,8 +234,8 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "INSERT INTO Publisher (Name,Img) VALUES(@name,@img)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@name",pb.Name);
-                cmd.Parameters.AddWithValue("@img",pb.Img);
+                cmd.Parameters.AddWithValue("@name", pb.Name);
+                cmd.Parameters.AddWithValue("@img", pb.Img);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -113,7 +255,7 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "Select ID,Name,Img From Publisher WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",id);
+                cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
                 Publisher pb = new Publisher();
@@ -137,9 +279,9 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "UPDATE Publisher Set Name=@name,Img=@img WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",pb.ID);
-                cmd.Parameters.AddWithValue("@name",pb.Name);
-                cmd.Parameters.AddWithValue("@img",pb.Img);
+                cmd.Parameters.AddWithValue("@id", pb.ID);
+                cmd.Parameters.AddWithValue("@name", pb.Name);
+                cmd.Parameters.AddWithValue("@img", pb.Img);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -156,7 +298,7 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "Delete From Publisher Where ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",id);
+                cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -263,7 +405,7 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "UPDATE Game Set Name=@name,Content=@content,Img=@img,Video=@video,discountRate=@discountRate,noDiscount=@noDiscount,discountPercentage=@discountPercentage WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",g.ID);
+                cmd.Parameters.AddWithValue("@id", g.ID);
                 cmd.Parameters.AddWithValue("@name", g.Name);
                 cmd.Parameters.AddWithValue("@content", g.Content);
                 cmd.Parameters.AddWithValue("@img", g.img);
@@ -287,7 +429,7 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "Delete From Game WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",id);
+                cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -361,7 +503,7 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "INSERT INTO News (NewsViews,Title,Content,newsDateTime,Img) VALUES (@newsViews,@title,@content,@newsdatetime,@img)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@newsViews",n.NewsViews);
+                cmd.Parameters.AddWithValue("@newsViews", n.NewsViews);
                 cmd.Parameters.AddWithValue("@title", n.Title);
                 cmd.Parameters.AddWithValue("@content", n.Content);
                 cmd.Parameters.AddWithValue("@newsdatetime", n.NewsDateTime);
@@ -382,9 +524,9 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "Update News Set Title=@title,Content=@content,Img=@img WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",n.ID);
-                cmd.Parameters.AddWithValue("@content",n.Content);
-                cmd.Parameters.AddWithValue("@img",n.Img);
+                cmd.Parameters.AddWithValue("@id", n.ID);
+                cmd.Parameters.AddWithValue("@content", n.Content);
+                cmd.Parameters.AddWithValue("@img", n.Img);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -404,7 +546,7 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "Delete From News WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",id);
+                cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -452,9 +594,9 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText="INSERT INTO Comment (MemberID,Content,Img,Title,CommentDateTime) VALUES (@memberID,@content,@img,@title,@commentdatetime)";
+                cmd.CommandText = "INSERT INTO Comment (MemberID,Content,Img,Title,CommentDateTime) VALUES (@memberID,@content,@img,@title,@commentdatetime)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("memberID",c.MemberID);
+                cmd.Parameters.AddWithValue("memberID", c.MemberID);
                 cmd.Parameters.AddWithValue("content", c.Content);
                 cmd.Parameters.AddWithValue("img", c.Img);
                 cmd.Parameters.AddWithValue("title", c.Title);
@@ -472,7 +614,27 @@ namespace DataAccessLayer
 
             }
         }
-        
+        public bool CommentDlt(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE Comment Where ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         #endregion
     }
 }

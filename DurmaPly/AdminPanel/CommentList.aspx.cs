@@ -17,5 +17,16 @@ namespace DurmaPly.AdminPanel
             lv_Comment.DataBind();
 
         }
+
+        protected void lv_Comment_ItemCommand(object sender, ListViewCommandEventArgs e)
+        {
+            int id = Convert.ToInt32(e.CommandArgument);
+            if (e.CommandName == "dlt")
+            {
+                dm.CommentDlt(id);
+            }
+            lv_Comment.DataSource = dm.CommentList();
+            lv_Comment.DataBind();
+        }
     }
 }

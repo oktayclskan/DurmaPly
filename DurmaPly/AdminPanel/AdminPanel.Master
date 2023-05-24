@@ -143,7 +143,7 @@
                                 </h6>
                                 <ul class="nav flex-column mb-2">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="MemberList.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
                                             Üye işlemleri(Ekle,Sil,Düzenle)
                                         </a>
@@ -157,13 +157,13 @@
                                 </h6>
                                 <ul class="nav flex-column mb-2">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="AdminList.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
                                             Admin işlemleri(Listele,sil,düzenle)
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="AdminUpdate.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
                                             Admin Ekle
                                         </a>

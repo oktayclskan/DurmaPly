@@ -26,7 +26,7 @@ namespace DurmaPly.AdminPanel
                     Comment c = new Comment();
                     c.Content = tb_content.Text;
                     c.Title = tb_Title.Text;
-                    c.MemberID = 1;
+                    c.MemberID = 4;
                     c.CommentDateTime = DateTime.Now;
                     if (fu_img.HasFile)
                     {
