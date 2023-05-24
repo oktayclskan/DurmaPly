@@ -19,7 +19,46 @@ namespace DataAccessLayer
 
         #endregion
         #region Member Metots
-
+        public List<Members> MemberList()
+        {
+            List<Members> members = new List<Members>();
+            try
+            {
+                cmd.CommandText = "Select * From Member";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Members m = new Members();
+                    m.ID = reader.GetInt32(0);
+                    m.Name = reader.GetString(1);
+                    m.Surname = reader.GetString(2);
+                    m.UserName = reader.GetString(3);
+                    m.Mail = reader.GetString(4);
+                    m.MemberPassword = reader.GetString(5);
+                    members.Add(m);
+                }
+                return members;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public Members MemberGet(int id)
+        {
+            try
+            {
+                cmd.CommandText = "Select ID,Name,Surname,Mail,MemberPassword From Member WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
+            }
+        }
         #endregion
         #region Publisher Metots
         public List<Publisher> PublisherList()
@@ -376,6 +415,64 @@ namespace DataAccessLayer
             }
             finally { con.Close(); }
         }
+        #endregion
+        #region Comment Metots
+        public List<Comment> CommentList()
+        {
+            List<Comment> comments = new List<Comment>();
+            try
+            {
+                cmd.CommandText = "Select c.ID,m.Name,c.Content,c.Img,c.Title,c.CommentDateTime From Comment AS c Join Member AS m ON c.MemberID=m.ID";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Comment cm = new Comment();
+                    cm.ID = reader.GetInt32(0);
+                    cm.MemberName = reader.GetString(1);
+                    cm.Content = reader.GetString(2);
+                    cm.Img = reader.GetString(3);
+                    cm.Title = reader.GetString(4);
+                    cm.CommentDateTime = reader.GetDateTime(5);
+                    comments.Add(cm);
+                }
+                return comments;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public bool CommentAdd(Comment c)
+        {
+            try
+            {
+                cmd.CommandText="INSERT INTO Comment (MemberID,Content,Img,Title,CommentDateTime) VALUES (@memberID,@content,@img,@title,@commentdatetime)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("memberID",c.MemberID);
+                cmd.Parameters.AddWithValue("content", c.Content);
+                cmd.Parameters.AddWithValue("img", c.Img);
+                cmd.Parameters.AddWithValue("title", c.Title);
+                cmd.Parameters.AddWithValue("commentdatetime", c.CommentDateTime);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+
+            }
+        }
+        
         #endregion
     }
 }

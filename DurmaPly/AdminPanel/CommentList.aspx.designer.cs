@@ -7,20 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DurmaPly.UserPanel
+namespace DurmaPly.AdminPanel
 {
 
 
-    public partial class Comments
+    public partial class CommentList
     {
 
         /// <summary>
-        /// rp_comment control.
+        /// lv_Comment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rp_comment;
+        protected global::System.Web.UI.WebControls.ListView lv_Comment;
     }
 }

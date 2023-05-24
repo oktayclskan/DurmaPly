@@ -6,15 +6,16 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataAccessLayer;
 
-namespace DurmaPly.UserPanel
+namespace DurmaPly.AdminPanel
 {
-    public partial class Comments : System.Web.UI.Page
+    public partial class CommentList : System.Web.UI.Page
     {
-        DataModel dm = new DataModel();
+        DataModel dm =new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            rp_comment.DataSource = dm.CommentList();
-            rp_comment.DataBind();
+            lv_Comment.DataSource = dm.CommentList();
+            lv_Comment.DataBind();
+
         }
     }
 }

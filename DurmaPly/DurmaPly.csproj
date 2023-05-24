@@ -89,6 +89,8 @@
     <Content Include="AdminPanel\bootstrap-5.3.0-alpha3-dist\js\bootstrap.esm.min.js" />
     <Content Include="AdminPanel\bootstrap-5.3.0-alpha3-dist\js\bootstrap.js" />
     <Content Include="AdminPanel\bootstrap-5.3.0-alpha3-dist\js\bootstrap.min.js" />
+    <Content Include="AdminPanel\CommentAdd.aspx" />
+    <Content Include="AdminPanel\CommentList.aspx" />
     <Content Include="AdminPanel\Css\AdminPanel.css" />
     <Content Include="AdminPanel\Defauld.aspx" />
     <Content Include="AdminPanel\deneme.aspx" />
@@ -2250,6 +2252,20 @@
     </Compile>
     <Compile Include="AdminPanel\AdminPanel.Master.designer.cs">
       <DependentUpon>AdminPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\CommentAdd.aspx.cs">
+      <DependentUpon>CommentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\CommentAdd.aspx.designer.cs">
+      <DependentUpon>CommentAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\CommentList.aspx.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\CommentList.aspx.designer.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel\Defauld.aspx.cs">
       <DependentUpon>Defauld.aspx</DependentUpon>

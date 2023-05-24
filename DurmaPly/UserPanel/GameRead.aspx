@@ -7,7 +7,7 @@
 
     </div>
 
-    <div class="container text-light">
+    <div class="container text-light" style="margin-top: 85px">
         <div class="contentDesc">
             <div class="row">
                 <div class="col-xl-6">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-md-9">
                     <p class="bg-black text-light">
-                        GTA 5 satın alma işleminden sonra Rockstar Games CD Key olarak teslim edilir. Online olarak oynayabilirsiniz. Aktivasyon ve kurulum Rockstar Games üzerinden yapılmaktadır. GTA 5 Steam üzerinde kullanılamaz. GTA V PC Rockstar Games Launcher üzerinde kullanılabilir. Yüzlerce farklı karayolu aracına ek olarak uçak, denizaltı ve hatta planör gibi araçlardan faydalanmaya imkan veren yapisi ile GTA 5, “ Açik Dünya “ kavramının gerçekten en yoğun yasandığı oyunlardan birisi olarak da nitelendirilebilmekte. Kişi GTA V tecrübesi süresince ister hikayeyi ve görevleri takip ederek sona ulasmaya çalışacaği gibi, istediginde de Los Santos’un kendisine sunduğu sınırsız olanaklar ile yaşayan bir şehir içerisinde sanal hayatını keyifli ve değişken biçimde sürdürmeye devam edebilir.
+                         <asp:Literal ID="ltrl_content" runat="server"></asp:Literal>
                     </p>
                 </div>
             </div>

@@ -11,7 +11,7 @@ namespace DurmaPly.AdminPanel
 {
 
 
-    public partial class GameUpdate
+    public partial class CommentAdd
     {
 
         /// <summary>
@@ -42,22 +42,13 @@ namespace DurmaPly.AdminPanel
         protected global::System.Web.UI.WebControls.Label lbl_eror;
 
         /// <summary>
-        /// tb_name control.
+        /// tb_Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_name;
-
-        /// <summary>
-        /// tb_discountPercentage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_discountPercentage;
+        protected global::System.Web.UI.WebControls.TextBox tb_Title;
 
         /// <summary>
         /// tb_content control.
@@ -69,57 +60,21 @@ namespace DurmaPly.AdminPanel
         protected global::System.Web.UI.WebControls.TextBox tb_content;
 
         /// <summary>
-        /// tb_discountRate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_discountRate;
-
-        /// <summary>
-        /// tb_noDiscount control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_noDiscount;
-
-        /// <summary>
         /// fu_img control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image fu_img;
+        protected global::System.Web.UI.WebControls.FileUpload fu_img;
 
         /// <summary>
-        /// fu_imguptdate control.
+        /// btn_CommentAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fu_imguptdate;
-
-        /// <summary>
-        /// fu_video control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fu_video;
-
-        /// <summary>
-        /// btn_GameAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn_GameAdd;
+        protected global::System.Web.UI.WebControls.LinkButton btn_CommentAdd;
     }
 }

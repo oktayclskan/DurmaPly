@@ -22,6 +22,7 @@ namespace DurmaPly.UserPanel
                 Games g = dm.GameGet(id);
                 ltrl_GameName.Text = g.Name;
                 ltrl_discountPercentage.Text = g.discountPercentage;
+                ltrl_content.Text = g.Content;
 
             }
 
