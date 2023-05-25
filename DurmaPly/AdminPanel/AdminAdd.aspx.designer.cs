@@ -42,39 +42,57 @@ namespace DurmaPly.AdminPanel
         protected global::System.Web.UI.WebControls.Label lbl_eror;
 
         /// <summary>
-        /// tb_Title control.
+        /// tb_Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_Title;
+        protected global::System.Web.UI.WebControls.TextBox tb_Name;
 
         /// <summary>
-        /// tb_content control.
+        /// tb_Surname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_content;
+        protected global::System.Web.UI.WebControls.TextBox tb_Surname;
 
         /// <summary>
-        /// fu_img control.
+        /// tb_Mail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fu_img;
+        protected global::System.Web.UI.WebControls.TextBox tb_Mail;
 
         /// <summary>
-        /// btn_NewsAdd control.
+        /// tb_adminPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn_NewsAdd;
+        protected global::System.Web.UI.WebControls.TextBox tb_adminPassword;
+
+        /// <summary>
+        /// tb_phone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_phone;
+
+        /// <summary>
+        /// btn_adminAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btn_adminAdd;
     }
 }

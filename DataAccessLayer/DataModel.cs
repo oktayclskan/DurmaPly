@@ -626,11 +626,11 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "INSERT INTO Comment (MemberID,Content,Img,Title,CommentDateTime) VALUES (@memberID,@content,@img,@title,@commentdatetime)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("memberID", c.MemberID);
-                cmd.Parameters.AddWithValue("content", c.Content);
-                cmd.Parameters.AddWithValue("img", c.Img);
-                cmd.Parameters.AddWithValue("title", c.Title);
-                cmd.Parameters.AddWithValue("commentdatetime", c.CommentDateTime);
+                cmd.Parameters.AddWithValue("@memberID", c.MemberID);
+                cmd.Parameters.AddWithValue("@content", c.Content);
+                cmd.Parameters.AddWithValue("@img", c.Img);
+                cmd.Parameters.AddWithValue("@title", c.Title);
+                cmd.Parameters.AddWithValue("@commentdatetime", c.CommentDateTime);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -641,7 +641,7 @@ namespace DataAccessLayer
             }
             finally
             {
-
+                con.Close();
             }
         }
         public bool CommentDlt(int id)

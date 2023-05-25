@@ -16,5 +16,16 @@ namespace DurmaPly.AdminPanel
             lv_publisher.DataSource = dm.PublisherList();
             lv_publisher.DataBind();
         }
+
+        protected void lv_publisher_ItemCommand(object sender, ListViewCommandEventArgs e)
+        {
+            int id = Convert.ToInt32(e.CommandArgument);
+            if (e.CommandName == "Dlt")
+            {
+                dm.PublisherDlt(id);
+            }
+            lv_publisher.DataSource = dm.PublisherList();
+            lv_publisher.DataBind();
+        }
     }
 }

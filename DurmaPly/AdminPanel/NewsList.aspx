@@ -10,7 +10,6 @@
                         <tr>
                             <td>ID</td>
                             <td>Haber Başlık</td>
-                            <td>İçerik</td>
                             <td>Yayın Tarihi</td>
                             <td>Görüntülenme</td>
                             <td>Resim</td>
@@ -26,11 +25,10 @@
                     <tr>
                         <td><%# Eval("ID") %></td>
                         <td><%# Eval("Title") %></td>
-                        <td><%# Eval("Content") %></td>
                         <td><%# Eval("NewsDateTime") %></td>
                         <td><%# Eval("NewsViews") %></td>
                         <td>
-                            <img src="../AdminPanel/Images/<%# Eval("Img") %>" width="30" />
+                            <img src="../AdminPanel/Images/<%# Eval("Img") %>" width="70" />
                         </td>
                         <td> 
                             <asp:LinkButton ID="btn_dlt" CssClass="btn btn-danger" runat="server">Sil</asp:LinkButton>

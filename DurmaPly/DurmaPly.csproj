@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPanel\AdminAdd.aspx" />
     <Content Include="AdminPanel\AdminList.aspx" />
     <Content Include="AdminPanel\AdminUpdate.aspx" />
     <Content Include="AdminPanel\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.css" />
@@ -2250,6 +2251,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPanel\AdminAdd.aspx.cs">
+      <DependentUpon>AdminAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminAdd.aspx.designer.cs">
+      <DependentUpon>AdminAdd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPanel\AdminList.aspx.cs">
       <DependentUpon>AdminList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

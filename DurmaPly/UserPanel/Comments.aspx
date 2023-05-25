@@ -3,12 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Repeater ID="rp_comment" runat="server">
-        <ItemTemplate>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div style="margin-top: 90px;">
+
+    <div class="container" style="margin-top:85px">
+        <div class="row">
+            <asp:Repeater ID="rp_comment" runat="server">
+                <ItemTemplate>
+                    <div class="col-md-4 mt-2">
+                        <div>
                             <div class="card border-0">
                                 <div class="contentNews">
                                     <div class="card-body bg-black border-danger">
@@ -17,16 +18,18 @@
                                         </a>
                                         <p class="date"><%# Eval("MemberName") %></p>
                                         <br />
-                                        <p class="title"><%# Eval("Title") %></p><div class="text-warning float-end position-relative" style="font-size:9pt; margin-top:-20px;margin-right:8px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                        <p class="title"><%# Eval("Title") %></p>
+                                        <div class="text-warning float-end position-relative" style="font-size: 9pt; margin-top: -20px; margin-right: 8px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            </div>
-        </ItemTemplate>
-    </asp:Repeater>
+                </ItemTemplate>
+            </asp:Repeater>
+
+        </div>
+    </div>
+
 
 </asp:Content>

@@ -13,5 +13,10 @@ namespace DurmaPly.AdminPanel
         {
 
         }
+
+        protected void btn_adminAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

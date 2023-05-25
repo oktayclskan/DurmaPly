@@ -35,7 +35,7 @@
             </div>
         </nav>
         <div class="row">
-
+            
             <div class="col-md-2">
 
                 <div class="container-fluid">
@@ -163,7 +163,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="AdminUpdate.aspx">
+                                        <a class="nav-link" href="AdminAdd.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
                                             Admin Ekle
                                         </a>
