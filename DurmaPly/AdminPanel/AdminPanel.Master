@@ -145,7 +145,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="MemberList.aspx">
                                             <span data-feather="file-text" class="align-text-bottom"></span>
-                                            Üye işlemleri(Ekle,Sil,Düzenle)
+                                            Üye işlemleri(Listele,Sil)
                                         </a>
                                     </li>
                                 </ul>

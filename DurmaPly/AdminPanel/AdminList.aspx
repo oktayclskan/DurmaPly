@@ -30,7 +30,7 @@
                         <td><%# Eval("Mail") %></td>
                         <td><%# Eval("Phone") %></td>
                         
-                        <td><a href="AdminUpdate?gid=<%# Eval("ID") %>" class="btn btn-primary">Düzenle</a></td>
+                        <td><a href="AdminUpdate.aspx?aid=<%# Eval("ID") %>" class="btn btn-primary">Düzenle</a></td>
                         <td>
                             <asp:LinkButton ID="btn_dlt" CssClass="btn btn-danger" runat="server" CommandArgument='<%# Eval("ID") %>' CommandName="dlt">Sil</asp:LinkButton>
                         </td>

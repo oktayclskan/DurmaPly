@@ -106,6 +106,7 @@
     <Content Include="AdminPanel\NewsUpdate.aspx" />
     <Content Include="AdminPanel\PublisherAdd.aspx" />
     <Content Include="AdminPanel\PublisherList.aspx" />
+    <Content Include="AdminPanel\PublisherUpdate.aspx" />
     <Content Include="AdminPanel\thema\dashboard\dashboard.css" />
     <Content Include="AdminPanel\thema\dashboard\dashboard.js" />
     <Content Include="AdminPanel\thema\dashboard\dashboard.rtl.css" />
@@ -2360,6 +2361,13 @@
     </Compile>
     <Compile Include="AdminPanel\PublisherList.aspx.designer.cs">
       <DependentUpon>PublisherList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\PublisherUpdate.aspx.cs">
+      <DependentUpon>PublisherUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\PublisherUpdate.aspx.designer.cs">
+      <DependentUpon>PublisherUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserPanel\Comments.aspx.cs">

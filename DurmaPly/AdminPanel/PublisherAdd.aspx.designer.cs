@@ -51,6 +51,15 @@ namespace DurmaPly.AdminPanel
         protected global::System.Web.UI.WebControls.TextBox tb_name;
 
         /// <summary>
+        /// tb_url control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_url;
+
+        /// <summary>
         /// fu_img control.
         /// </summary>
         /// <remarks>

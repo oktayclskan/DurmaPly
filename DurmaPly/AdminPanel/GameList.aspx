@@ -12,7 +12,6 @@
                         <tr>
                             <td>ID</td>
                             <td>Oyun Adı</td>
-                            <td>İçerik</td>
                             <td>Yayın Tarihi</td>
                             <td>İndirimsiz Fiyat</td>
                             <td>İndirimli Fiyat</td>
@@ -30,15 +29,14 @@
                     <tr>
                         <td><%# Eval("ID") %></td>
                         <td><%# Eval("Name") %></td>
-                        <td><%# Eval("Content") %></td>
                         <td><%# Eval("DateTime") %></td>
                         <td><%# Eval("noDiscount") %></td>
                         <td><%# Eval("DiscountRate") %></td>
                         <td>
-                            <img src="../AdminPanel/Images/<%# Eval("img") %>" width="30" />
+                            <img src="../AdminPanel/Images/<%# Eval("img") %>" width="50" />
                         </td>
                         <td>
-                            <video autoplay muted style="width:70px">
+                            <video autoplay muted style="width:85px">
                                 <source  class="video w-25 h-100 mb-3" src="../AdminPanel/Video/<%# Eval("Video") %>" />
                             </video>
                         </td>

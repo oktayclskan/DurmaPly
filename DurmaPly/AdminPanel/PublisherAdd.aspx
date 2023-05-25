@@ -20,6 +20,7 @@
                     <div class="col">
                         <asp:TextBox ID="tb_name" CssClass="form-control mt-2" runat="server" placeholder="Yayıncı Adı"></asp:TextBox>
                         <div>
+                             <asp:TextBox ID="tb_url" CssClass="form-control mt-2" runat="server" placeholder="Yayın Yaptığı Url"></asp:TextBox>
                             <div class="mb-3">
                                 <label class="form-label">Resim Seciniz</label>
                                 <asp:FileUpload ID="fu_img" runat="server" CssClass="form-control form-control-sm" />

@@ -46,20 +46,29 @@ namespace DurmaPly.AdminPanel
             g.DiscountRate = Convert.ToDecimal(tb_discountRate.Text);
             if (fu_imguptdate.HasFile)
             {
-                FileInfo fi = new FileInfo(fu_imguptdate.FileName);
-                string connect = fi.Extension;
+
+                FileInfo img = new FileInfo(fu_imguptdate.FileName);
+                string connect = img.Extension;
                 string name = Guid.NewGuid().ToString();
                 g.img = name + connect;
                 fu_imguptdate.SaveAs(Server.MapPath("../AdminPanel/Images/" + name + connect));
-                if (dm.GameUpdate(g))
+                
+                if (fu_video.HasFile)
                 {
-                    pnl_succes.Visible = true;
-
-                }
-                else
-                {
-                    pnl_error.Visible = true;
-                    lbl_eror.Text = "Günellenirken bir hata oluştu";
+                    FileInfo video = new FileInfo(fu_video.FileName);
+                    string connectvd = video.Extension;
+                    string namevd = Guid.NewGuid().ToString();
+                    g.Video = namevd + connectvd;
+                    fu_video.SaveAs(Server.MapPath("../AdminPanel/Video/" + namevd + connectvd));
+                    if (dm.GameUpdate(g))
+                    {
+                        pnl_succes.Visible = true;
+                    }
+                    else
+                    {
+                        pnl_error.Visible = true;
+                        lbl_eror.Text = "Günellenirken bir hata oluştu";
+                    }
                 }
             }
             

@@ -23,6 +23,7 @@ namespace DurmaPly.AdminPanel
             {
                 Publisher pb = new Publisher();
                 pb.Name = tb_name.Text;
+                pb.Url = tb_url.Text;
                 if (fu_img.HasFile)
                 {
                     FileInfo fi = new FileInfo(fu_img.FileName);
@@ -33,10 +34,13 @@ namespace DurmaPly.AdminPanel
                     if (dm.PublisherAdd(pb))
                     {
                         tb_name.Text = " ";
+                        tb_url.Text = " ";
                         pnl_succes.Visible = true;
+                        pnl_error.Visible = false;
                     }
                     else
                     {
+                        pnl_succes.Visible = false;
                         pnl_error.Visible = true;
                         lbl_eror.Text = "Eklenirken Bir Hata Oluştu";
                     }
@@ -44,6 +48,7 @@ namespace DurmaPly.AdminPanel
             }
             else
             {
+                pnl_succes.Visible = false;
                 pnl_error.Visible = true;
                 lbl_eror.Text = "Lütfen Yayıncı Adı Giriniz";
             }

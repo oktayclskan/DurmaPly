@@ -35,7 +35,7 @@
                         <td> 
                             <asp:LinkButton ID="btn_dlt" CssClass="btn btn-danger" runat="server">Sil</asp:LinkButton>
                         </td>
-                        <td><a href="#" class="btn btn-primary">Düzenle</a></td>
+                        <td><a href="NewsUpdate.aspx?nid=<%# Eval("ID") %>" class="btn btn-primary">Düzenle</a></td>
                     </tr>
                 </ItemTemplate>
             </asp:ListView>

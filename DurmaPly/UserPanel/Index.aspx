@@ -62,7 +62,7 @@
                                         <img src="../AdminPanel/Images/<%# Eval("img") %>" class="img-thumbnail p-0 border-0" />
                                     </a>
                                 </div>
-                                <div class="card-footer bg-dark">
+                                <div class="card-footer bg-dark" style="height:78px;">
                                     <div class="row">
                                         <div class="col-md-8 stars">
                                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -91,3 +91,14 @@
         </div>
     </div>
 </asp:Content>
+ <%--<div class="col-md-3 p-2">
+                <div class="card">
+                    <div class="card-body" ">
+                        <a href="<%# Eval("Url") %>">
+                            <img src="../AdminPanel/Images/<%# Eval("Img") %>" class="img-thumbnail bg-dark p-0 border-0 opacity-25" />
+
+                        </a>
+                        <span class="text-light"><%# Eval("Name") %></span>
+                    </div>
+                </div>
+            </div>--%>

@@ -52,6 +52,12 @@ namespace DurmaPly.AdminPanel
                                     fu_video.SaveAs(Server.MapPath("../AdminPanel/Video/") + namevd + extensionvdn);
                                     if (dm.GameAdd(gm))
                                     {
+                                        gm.Name = " ";
+                                        gm.Content = " ";
+                                        gm.DiscountRate = 0;
+                                        gm.noDiscount = 0;
+                                        gm.discountPercentage = " ";
+
                                         pnl_succes.Visible = true;
                                     }
                                     else

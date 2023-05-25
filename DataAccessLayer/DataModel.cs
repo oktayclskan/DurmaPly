@@ -115,6 +115,31 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+        public bool AdminUpdate(Admins a)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Admins Set Name=@name,Surname=@surname,Mail=@mail,AdminPassword=@adminPassword,Phone=@phone Where ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",a.ID);
+                cmd.Parameters.AddWithValue("@name",a.Name);
+                cmd.Parameters.AddWithValue("@surname", a.Surname);
+                cmd.Parameters.AddWithValue("@mail", a.Mail);
+                cmd.Parameters.AddWithValue("@adminPassword", a.AdminPassword);
+                cmd.Parameters.AddWithValue("@phone", a.Phone);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         
 
         #endregion
@@ -218,6 +243,7 @@ namespace DataAccessLayer
                     pb.ID = reader.GetInt32(0);
                     pb.Name = reader.GetString(1);
                     pb.Img = reader.GetString(2);
+                    pb.Url = reader.GetString(3);
                     publishers.Add(pb);
                 }
                 return publishers;
@@ -232,10 +258,11 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Publisher (Name,Img) VALUES(@name,@img)";
+                cmd.CommandText = "INSERT INTO Publisher (Name,Img,Url) VALUES(@name,@img,@url)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@name", pb.Name);
                 cmd.Parameters.AddWithValue("@img", pb.Img);
+                cmd.Parameters.AddWithValue("@url", pb.Url);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -253,7 +280,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "Select ID,Name,Img From Publisher WHERE ID=@id";
+                cmd.CommandText = "Select ID,Name,Img,Url From Publisher WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -264,6 +291,7 @@ namespace DataAccessLayer
                     pb.ID = reader.GetInt32(0);
                     pb.Name = reader.GetString(1);
                     pb.Img = reader.GetString(2);
+                    pb.Url = reader.GetString(3);
                 }
                 return pb;
             }
@@ -277,11 +305,12 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Publisher Set Name=@name,Img=@img WHERE ID=@id";
+                cmd.CommandText = "UPDATE Publisher Set Name=@name,Img=@img,Url=@url WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", pb.ID);
                 cmd.Parameters.AddWithValue("@name", pb.Name);
                 cmd.Parameters.AddWithValue("@img", pb.Img);
+                cmd.Parameters.AddWithValue("@url",pb.Url);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -522,9 +551,10 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "Update News Set Title=@title,Content=@content,Img=@img WHERE ID=@id";
+                cmd.CommandText = "Update News Set Title=@title,Content=@content,Img=@img WHERE ID=@id ";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id", n.ID);
+                cmd.Parameters.AddWithValue("@id",n.ID);
+                cmd.Parameters.AddWithValue("@title", n.Title);
                 cmd.Parameters.AddWithValue("@content", n.Content);
                 cmd.Parameters.AddWithValue("@img", n.Img);
                 con.Open();

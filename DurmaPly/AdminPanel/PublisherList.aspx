@@ -11,6 +11,7 @@
                             <td>ID</td>
                             <td>Yayincı Adı</td>
                             <td>Resim</td>
+                            <td>URL</td>
                             <td>Sil</td>
                             <td>Düzenle</td>
                         </tr>
@@ -26,10 +27,11 @@
                         <td>
                             <img src="../AdminPanel/Images/<%# Eval("Img") %>" width="30" />
                         </td>
+                        <td><%# Eval("Url") %></td>
                         <td> 
                             <asp:LinkButton ID="btn_dlt" CssClass="btn btn-danger" runat="server">Sil</asp:LinkButton>
                         </td>
-                        <td><a href="#" class="btn btn-primary">Düzenle</a></td>
+                        <td><a href="PublisherUpdate.aspx?sid=<%# Eval("ID") %>" class="btn btn-primary">Düzenle</a></td>
                     </tr>
                 </ItemTemplate>
             </asp:ListView>
