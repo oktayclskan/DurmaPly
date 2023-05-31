@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top: 88px">
+    <div class="container">
         <div class="row">
             <div class="col-sm-8">
                 <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
@@ -28,7 +28,7 @@
                         <div class="carousel-item">
                             <img src="Images/forza.jpg" class="w-100 h-50">
                             <div class="carousel-caption text-light">
-                                Kampanya yaptık gel gel
+                               Forzada indirimli araba paketleri
                             </div>
                         </div>
                     </div>
@@ -91,14 +91,4 @@
         </div>
     </div>
 </asp:Content>
- <%--<div class="col-md-3 p-2">
-                <div class="card">
-                    <div class="card-body" ">
-                        <a href="<%# Eval("Url") %>">
-                            <img src="../AdminPanel/Images/<%# Eval("Img") %>" class="img-thumbnail bg-dark p-0 border-0 opacity-25" />
-
-                        </a>
-                        <span class="text-light"><%# Eval("Name") %></span>
-                    </div>
-                </div>
-            </div>--%>
+ 

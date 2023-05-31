@@ -15,6 +15,15 @@ namespace DurmaPly.UserPanel
     {
 
         /// <summary>
+        /// ltrl_video control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrl_video;
+
+        /// <summary>
         /// ltrl_GameName control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace DurmaPly.UserPanel
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltrl_discountPercentage;
+
+        /// <summary>
+        /// lbtn_resetPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtn_resetPassword;
 
         /// <summary>
         /// ltrl_content control.

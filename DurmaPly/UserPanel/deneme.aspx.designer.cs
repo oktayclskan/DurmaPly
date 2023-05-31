@@ -15,66 +15,30 @@ namespace DurmaPly.UserPanel
     {
 
         /// <summary>
-        /// tb_name control.
+        /// tb_resetMail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_name;
+        protected global::System.Web.UI.WebControls.TextBox tb_resetMail;
 
         /// <summary>
-        /// tb_surname control.
+        /// tb_resetPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_surname;
+        protected global::System.Web.UI.WebControls.TextBox tb_resetPassword;
 
         /// <summary>
-        /// tb_username control.
+        /// lbtn_resetPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_username;
-
-        /// <summary>
-        /// tb_eMail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_eMail;
-
-        /// <summary>
-        /// tb_password control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_password;
-
-        /// <summary>
-        /// txtBirthDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBirthDate;
-
-        /// <summary>
-        /// calBirthDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calBirthDate;
+        protected global::System.Web.UI.WebControls.LinkButton lbtn_resetPassword;
     }
 }

@@ -23,6 +23,7 @@ namespace DurmaPly.UserPanel
                 ltrl_GameName.Text = g.Name;
                 ltrl_discountPercentage.Text = g.discountPercentage;
                 ltrl_content.Text = g.Content;
+                ltrl_video.Text = "<source src='../AdminPanel/Video/"+g.Video+"'/>";
 
             }
 

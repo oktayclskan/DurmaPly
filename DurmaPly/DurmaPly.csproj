@@ -2197,7 +2197,6 @@
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\yin-yang.svg" />
     <Content Include="UserPanel\fontawesome-free-6.3.0-web\svgs\solid\z.svg" />
     <Content Include="UserPanel\GameRead.aspx" />
-    <Content Include="UserPanel\Gta5.aspx" />
     <Content Include="UserPanel\Images\assassins-creed-serisi.jpg" />
     <Content Include="UserPanel\Images\black.jpg" />
     <Content Include="UserPanel\Images\cod infinite.jpg" />
@@ -2236,6 +2235,7 @@
     <Content Include="UserPanel\imgNews\overwatch-News.jpg" />
     <Content Include="UserPanel\imgNews\overwatch-Newss.jpg" />
     <Content Include="UserPanel\Index.aspx" />
+    <Content Include="UserPanel\jquery-3.6.4.min.js" />
     <Content Include="UserPanel\Language.aspx" />
     <Content Include="UserPanel\Login.aspx" />
     <Content Include="UserPanel\News.aspx" />
@@ -2398,13 +2398,6 @@
     </Compile>
     <Compile Include="UserPanel\GameRead.aspx.designer.cs">
       <DependentUpon>GameRead.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserPanel\Gta5.aspx.cs">
-      <DependentUpon>Gta5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPanel\Gta5.aspx.designer.cs">
-      <DependentUpon>Gta5.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
