@@ -33,9 +33,9 @@
                                     <h6 style="padding-top: 10px">TRY289,50 </h6>
 
                                 </div>
-                                <div class="col-lg-3 Price " style="z-index:1">
-                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: underline;">
-                                        Şifremi unuttum
+                                <div class="col-lg-4 Price " style="z-index:1">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                                        <span class="text-decoration-none text-white" >Satın al</span>
                                     </button>
                                     <!-- Modal -->
                                     <div style="z-index:1">
@@ -48,9 +48,8 @@
                                                 </div>
                                                 <div class="modal-body px-5">
                                                     <p class="py-2 text-secondary">
-                                                       Satın alma işlemi gerçekleştiremiyızasdas
+                                                       Satın alma işleminizi şaunda gerçekleştiremiyoruz.
                                                     </p>
-                                                  
                                                     <asp:LinkButton ID="lbtn_resetPassword" runat="server" CssClass="btn btn-primary w-100">Kapat</asp:LinkButton>
                                                 </div>
                                             </div>
